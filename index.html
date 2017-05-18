@@ -1,0 +1,3092 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+  <title>Election 2016 Styleguide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Bootstrap 2 CDN -->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css">
+
+
+
+  <!-- Style Guide Boilerplate Styles -->
+  <link rel="stylesheet" href="css/sg-style.css">
+  <!--[if lt IE 9]><link rel="stylesheet" href="css/sg-style-old-ie.css"><![endif]-->
+
+  <!-- https://github.com/sindresorhus/github-markdown-css -->
+  <link rel="stylesheet" href="css/github-markdown.css">
+
+  <!-- Replace below stylesheet with your own stylesheet -->
+  <link rel="stylesheet" href="../ge-styles/ge-styles.css">
+
+    <!-- Replace below stylesheet with your own stylesheet -->
+  <link rel="stylesheet" href="../ge-styles/ge-issue-tracker.css">
+
+  <!-- prism Syntax Highlighting Styles -->
+  <link rel="stylesheet" href="vendor/prism/prism.css">
+</head>
+<body>
+  <a href="#main" class="sg-visually-hidden sg-visually-hidden-focusable">Skip to main content</a>
+
+  <div id="top" class="sg-header" role="banner">
+    <div class="sg-container">
+      <h1 class="sg-logo">
+        <span class="sg-logo-initials">GE 2016</span>
+        <span class="sg-logo-full">General Election 2016</span> <em>STYLE GUIDE</em>
+      </h1>
+      <button type="button" class="sg-nav-toggle">Menu</button>
+    </div>
+  </div><!--/.sg-header-->
+
+  <div class="sg-wrapper sg-clearfix">
+    <div id="nav" class="sg-sidebar" role="navigation">
+      <h2 class="sg-h2 sg-subnav-title">About</h2>
+      <ul class="sg-nav-group">
+        <li>
+          <a href="#sg-about">Getting Started</a>
+        </li>
+        <li>
+          <a href="#sg-colors">Colors</a>
+        </li>
+        <li>
+          <a href="#sg-fontStacks">Fonts</a>
+        </li>
+      </ul>
+
+      <ul class="sg-nav-group"><li class="sg-subnav-parent"><h2 id="sg-markup-Cards" class="sg-h2 sg-title">Cards</h2><ul class="sg-nav-group"><li><a href="#sg-markup-Cards-issue-tracker-html">issue tracker</a></li><li><a href="#sg-markup-Cards-national-cards-html">national cards</a></li></ul></li><li class="sg-subnav-parent"><h2 id="sg-markup-Charts" class="sg-h2 sg-title">Charts</h2><ul class="sg-nav-group"><li><a href="#sg-markup-Charts-national-spread-html">national spread</a></li></ul></li><li class="sg-subnav-parent"><h2 id="sg-markup-Ganimation" class="sg-h2 sg-title">Ganimation</h2><ul class="sg-nav-group"><li><a href="#sg-markup-Ganimation-ganimation-html">ganimation</a></li></ul></li><li class="sg-subnav-parent"><h2 id="sg-markup-Navigation" class="sg-h2 sg-title">Navigation</h2><ul class="sg-nav-group"><li><a href="#sg-markup-Navigation-election-header-html">election header</a></li></ul></li><li class="sg-subnav-parent"><h2 id="sg-markup-Tables" class="sg-h2 sg-title">Tables</h2><ul class="sg-nav-group"><li><a href="#sg-markup-Tables-constituencty-results-html">constituencty results</a></li><li><a href="#sg-markup-Tables-meta-data-html">meta data</a></li></ul></li></ul>    </div><!--/.sg-sidebar-->
+
+    <div id="main" class="sg-main" role="main">
+      <div class="sg-container">
+        <div class="sg-info">
+          <div class="sg-about sg-section">
+            <h2 id="sg-about" class="sg-h2">Getting Started</h2>
+            <p>A living style guide is a great tool to promote visual consistency, unify UX designers and front-end developers, as well as speed up development times. Add some documentation here on how to get started with your new style guide and start customizing this boilerplate to your liking.</p>
+            <p>If you are looking for resources on style guides, check out <a href="http://styleguides.io">styleguides.io</a>. There are a ton of great articles, books, podcasts, talks, and other style guide tools!</p>
+          </div><!--/.sg-about-->
+
+          <!-- Manually add your UI colors here. -->
+          <div class="sg-colors sg-section">
+            <h2 id="sg-colors" class="sg-h2">Party Colors</h2>
+            <h3>2016 Parties</h3>
+            <div class="sg-color-grid">
+              <div class="sg-color">
+                <div class="sg-color-swatch party-FF"></div>
+                <div class="sg-color-name">Fiana Fáil</div>
+                <div class="sg-color-name">FF</div>
+                <div class="sg-color-value">#40b34f</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch party-FG"></div>
+                <div class="sg-color-name">Fine Gael</div>
+                <div class="sg-color-name">FG</div>
+                <div class="sg-color-value">#2f3590</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch party-LP"></div>
+                <div class="sg-color-name">Labour Party</div>
+                <div class="sg-color-name">LAB</div>
+                <div class="sg-color-value">#c72831</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch party-SF"></div>
+                <div class="sg-color-name">Sinn Féin</div>
+                <div class="sg-color-name">SF</div>
+                <div class="sg-color-value">#088560</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch party-RI"></div>
+                <div class="sg-color-name">Renua Ireland</div>
+                <div class="sg-color-name">RI</div>
+                <div class="sg-color-value">#168dcd</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch party-IO"></div>
+                <div class="sg-color-name">Independants & other</div>
+                <div class="sg-color-name">IO</div>
+                <div class="sg-color-value">#000</div>
+              </div>
+              <div class="sg-color">
+                  <div class="sg-color-swatch party-GP"></div>
+                  <div class="sg-color-name">Green Party</div>
+                  <div class="sg-color-name">GP</div>
+                  <div class="sg-color-value">#b4d144</div>
+              </div>
+              <div class="sg-color">
+                  <div class="sg-color-swatch aaa-pbp"></div>
+                  <div class="sg-color-name">Anti-Austerity Alliance–People Before Profit</div>
+                  <div class="sg-color-name">AAA-PBP</div>
+                  <div class="sg-color-value">#c4568b</div>
+              </div>
+              <div class="sg-color">
+                  <div class="sg-color-swatch party-SD"></div>
+                  <div class="sg-color-name">Social Democrats</div>
+                  <div class="sg-color-name">SD</div>
+                  <div class="sg-color-value">#1dafec</div>
+              </div>
+              
+            </div><!--/.sg-color-grid-->
+          </div><!--/.sg-colors-->
+
+          <!-- Manually Add icons here -->
+          <h3>Issue Tracker icons</h3>
+          <div class="sg-color-grid" style="font-size: 2em;">
+            <i class="issue-icon icon-main"></i>
+            <i class="issue-icon icon-health"></i>
+            <i class="issue-icon icon-agriculture"></i>
+            <i class="issue-icon icon-childcare"></i>
+            <i class="issue-icon icon-crime"></i>
+            <i class="issue-icon icon-economy"></i>
+            <i class="issue-icon icon-education"></i>
+            <i class="issue-icon icon-financial"></i>
+            <i class="issue-icon icon-housing"></i>
+            <i class="issue-icon icon-political-reform"></i>
+            <i class="issue-icon icon-public-sector-reform"></i>
+            <i class="issue-icon icon-regional"></i>
+            <i class="issue-icon icon-social"></i>
+          </div>
+
+          <h3>Party Icons</h3>
+
+          <div class="sg-color-grid">
+            <i class="party-logo party-logo--lp"></i>
+            <i class="party-logo party-logo--ff"></i>
+            <i class="party-logo party-logo--fg"></i>
+            <i class="party-logo party-logo--gp"></i>
+            <i class="party-logo party-logo--sd"></i>
+            <i class="party-logo party-logo--aaa"></i>
+            <i class="party-logo party-logo--ri"></i>
+          </div>
+
+          <!-- Manually add your fonts here. -->
+          <div class="sg-font-stacks sg-section">
+            <h2 id="sg-fontStacks" class="sg-h2">Font Stacks</h2>
+            <dl class="sg-font-list">
+              <dt>Primary Font:</dt>
+              <dd style='font-family: "Open Sans","Roboto","Helvetica","Roboto",sans-serif;'>"Open Sans","Roboto","Helvetica","Roboto",sans-serif;</dd>
+
+              <dt>Secondary font</dt>
+              <dd style='font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;'>
+                Helvetica Neue",Helvetica,Arial,sans-serif;
+              </dd>
+
+              <dt>Heading Font:</dt>
+              <dd style='font-family: "DINWeb-Bold", Arial, Helvetica, sans-serif;'>"DINWeb-Bold", Arial, Helvetica, sans-serif;</dd>
+
+
+              <dt>Sub-heading Font:</dt>
+              <dd style='font-family: "DINWeb-Medium", Arial, Helvetica, sans-serif;'>"DINWeb-Medium", Arial, Helvetica, sans-serif;</dd>
+
+            </dl>
+            <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
+          </div><!--/.sg-font-stacks-->
+        </div><!--/.sg-info-->
+
+        <div class="sg-section-group"><h1 id="sg-markup-Cards" class="sg-h1 sg-title">Cards</h1><div class="sg-section-group"><div class="sg-section"><h2 id="sg-markup-Cards-issue-tracker-html" class="sg-h2 sg-title">issue tracker</h2><div class="sg-sub-section sg-example"><!-- Party Card -->
+
+<div class="issue-tracker-inner-container" style="display: block;"> 
+
+<div class="ge-issue-tracker__party ge-issue-tracker__party--fg">
+            <h3 class="card-heading">
+                <i class="party-logo party-logo--fg"></i>
+                Fine Gael
+            </h3>
+            <ul class="party-points">
+
+                
+                    
+                        <li>
+                            Extend free GP care to all children by 2019 and free dental care for under-sixes
+                        </li>
+                    
+                
+                    
+                        <li>
+                            Provide medical cards to all children in receipt of Domiciliary Care Allowance
+                        </li>
+                    
+                
+                    
+                        <li>
+                            Reduce annual threshold for Drug Payment Scheme from €1,728 to €950
+                        </li>
+                    
+                
+                    
+                        <li>
+                            Reduce prescription charge cap from €25 per month to €17.50
+                        </li>
+                    
+                
+                    
+                        <li>
+                            Restore dental treatment benefit
+                        </li>
+                    
+                
+                    
+                        <li>
+                            Deal with vast majority of emergency department patients within six hours
+                        </li>
+                    
+                
+
+            </ul>
+
+            <p class="issue-link issue-link--party">
+                <a class="ge-issue-tracker__single-party" data-issue-tracker-party-code="FG" data-issue-tracker-party-title="Fine Gael">
+                        More policies from this party <i class="internal"></i>
+                </a>
+            </p>
+        </div>
+
+</div>
+</div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;!-- Party Card --&gt;
+
+&lt;div class=&quot;issue-tracker-inner-container&quot; style=&quot;display: block;&quot;&gt; 
+
+&lt;div class=&quot;ge-issue-tracker__party ge-issue-tracker__party--fg&quot;&gt;
+            &lt;h3 class=&quot;card-heading&quot;&gt;
+                &lt;i class=&quot;party-logo party-logo--fg&quot;&gt;&lt;/i&gt;
+                Fine Gael
+            &lt;/h3&gt;
+            &lt;ul class=&quot;party-points&quot;&gt;
+
+                
+                    
+                        &lt;li&gt;
+                            Extend free GP care to all children by 2019 and free dental care for under-sixes
+                        &lt;/li&gt;
+                    
+                
+                    
+                        &lt;li&gt;
+                            Provide medical cards to all children in receipt of Domiciliary Care Allowance
+                        &lt;/li&gt;
+                    
+                
+                    
+                        &lt;li&gt;
+                            Reduce annual threshold for Drug Payment Scheme from €1,728 to €950
+                        &lt;/li&gt;
+                    
+                
+                    
+                        &lt;li&gt;
+                            Reduce prescription charge cap from €25 per month to €17.50
+                        &lt;/li&gt;
+                    
+                
+                    
+                        &lt;li&gt;
+                            Restore dental treatment benefit
+                        &lt;/li&gt;
+                    
+                
+                    
+                        &lt;li&gt;
+                            Deal with vast majority of emergency department patients within six hours
+                        &lt;/li&gt;
+                    
+                
+
+            &lt;/ul&gt;
+
+            &lt;p class=&quot;issue-link issue-link--party&quot;&gt;
+                &lt;a class=&quot;ge-issue-tracker__single-party&quot; data-issue-tracker-party-code=&quot;FG&quot; data-issue-tracker-party-title=&quot;Fine Gael&quot;&gt;
+                        More policies from this party &lt;i class=&quot;internal&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-Cards-national-cards-html" class="sg-h2 sg-title">national cards</h2><div class="sg-sub-section sg-example"><!-- Include JS dependancies -->
+<script src="../plugins/js/jquery.national-page.js"></script>
+
+    <div class="ge-container">
+            <div class="ge-col3">
+                   <div class="accordion national-view-card leinster" role="tablist" multiselectable="true">
+                        <div class="panel-title national-view-card__main"><a href="#panel-0" aria-expanded="false" aria-controls="panel-0" id="control-panel-0">
+                            <div class="national-view-card__title">
+                                Carlow-Kilkenny
+                            </div>
+                            <div class="national-view-card__heading">
+
+                                <div class="national-view-card__seats">
+                                    
+                                        <div class="party-FG">
+                                            &nbsp;
+                                            <div class="visuallyhidden">
+                                                fg
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="party-FG">
+                                            &nbsp;
+                                            <div class="visuallyhidden">
+                                                fg
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="party-FF">
+                                            &nbsp;
+                                            <div class="visuallyhidden">
+                                                ff
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="party-LAB">
+                                            &nbsp;
+                                            <div class="visuallyhidden">
+                                                lab
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="party-FG">
+                                            &nbsp;
+                                            <div class="visuallyhidden">
+                                                fg
+                                            </div>
+                                        </div>
+                                    
+
+                                    
+                                </div>
+
+                            </div>
+
+                            <div class="national-view-card__count">
+                                <div class="national-view-card__num">
+                                    5/5
+                                </div>
+                                <div class="national-view-card__label">seats filled</div>
+                            </div>
+
+                        <i class="fa fa-angle-down ge-icon ge-icon--collapse"></i></a></div>
+
+                        <div class="panel-content national-view-card__all" id="panel-0" aria-labelledby="control-panel-0" aria-hidden="true" role="tabpanel" style="display: none;">
+                            <table class="national-view-card__table table">
+                                <tbody>
+                                    
+                                        <tr>
+                                            <td class="fg party">Phelan, John Paul</td>
+                                            <td class="first-pref">
+                                                
+                                                    14.82%
+                                                
+                                                
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="fg party">Hogan, Phil</td>
+                                            <td class="first-pref">
+                                                
+                                                    14.27%
+                                                
+                                                
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="ff party">McGuinness, John</td>
+                                            <td class="first-pref">
+                                                
+                                                    12.92%
+                                                
+                                                
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="lab party">Phelan, Ann</td>
+                                            <td class="first-pref">
+                                                
+                                                    10.95%
+                                                
+                                                
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="fg party">Deering, Pat</td>
+                                            <td class="first-pref">
+                                                
+                                                    10.13%
+                                                
+                                                
+                                            </td>
+                                        </tr>
+                                    
+                                </tbody>
+                            </table>
+
+                            <a href="/election-2016/carlow-kilkenny" aria-role="button" class="it-btn it-btn--outline it-btn--small">View full results</a>
+                        </div>
+                    </div>                
+            </div> 
+    </div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;!-- Include JS dependancies --&gt;
+&lt;script src=&quot;../plugins/js/jquery.national-page.js&quot;&gt;&lt;/script&gt;
+
+    &lt;div class=&quot;ge-container&quot;&gt;
+            &lt;div class=&quot;ge-col3&quot;&gt;
+                   &lt;div class=&quot;accordion national-view-card leinster&quot; role=&quot;tablist&quot; multiselectable=&quot;true&quot;&gt;
+                        &lt;div class=&quot;panel-title national-view-card__main&quot;&gt;&lt;a href=&quot;#panel-0&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;panel-0&quot; id=&quot;control-panel-0&quot;&gt;
+                            &lt;div class=&quot;national-view-card__title&quot;&gt;
+                                Carlow-Kilkenny
+                            &lt;/div&gt;
+                            &lt;div class=&quot;national-view-card__heading&quot;&gt;
+
+                                &lt;div class=&quot;national-view-card__seats&quot;&gt;
+                                    
+                                        &lt;div class=&quot;party-FG&quot;&gt;
+                                            &amp;nbsp;
+                                            &lt;div class=&quot;visuallyhidden&quot;&gt;
+                                                fg
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    
+                                        &lt;div class=&quot;party-FG&quot;&gt;
+                                            &amp;nbsp;
+                                            &lt;div class=&quot;visuallyhidden&quot;&gt;
+                                                fg
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    
+                                        &lt;div class=&quot;party-FF&quot;&gt;
+                                            &amp;nbsp;
+                                            &lt;div class=&quot;visuallyhidden&quot;&gt;
+                                                ff
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    
+                                        &lt;div class=&quot;party-LAB&quot;&gt;
+                                            &amp;nbsp;
+                                            &lt;div class=&quot;visuallyhidden&quot;&gt;
+                                                lab
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    
+                                        &lt;div class=&quot;party-FG&quot;&gt;
+                                            &amp;nbsp;
+                                            &lt;div class=&quot;visuallyhidden&quot;&gt;
+                                                fg
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    
+
+                                    
+                                &lt;/div&gt;
+
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;national-view-card__count&quot;&gt;
+                                &lt;div class=&quot;national-view-card__num&quot;&gt;
+                                    5/5
+                                &lt;/div&gt;
+                                &lt;div class=&quot;national-view-card__label&quot;&gt;seats filled&lt;/div&gt;
+                            &lt;/div&gt;
+
+                        &lt;i class=&quot;fa fa-angle-down ge-icon ge-icon--collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+
+                        &lt;div class=&quot;panel-content national-view-card__all&quot; id=&quot;panel-0&quot; aria-labelledby=&quot;control-panel-0&quot; aria-hidden=&quot;true&quot; role=&quot;tabpanel&quot; style=&quot;display: none;&quot;&gt;
+                            &lt;table class=&quot;national-view-card__table table&quot;&gt;
+                                &lt;tbody&gt;
+                                    
+                                        &lt;tr&gt;
+                                            &lt;td class=&quot;fg party&quot;&gt;Phelan, John Paul&lt;/td&gt;
+                                            &lt;td class=&quot;first-pref&quot;&gt;
+                                                
+                                                    14.82%
+                                                
+                                                
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    
+                                        &lt;tr&gt;
+                                            &lt;td class=&quot;fg party&quot;&gt;Hogan, Phil&lt;/td&gt;
+                                            &lt;td class=&quot;first-pref&quot;&gt;
+                                                
+                                                    14.27%
+                                                
+                                                
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    
+                                        &lt;tr&gt;
+                                            &lt;td class=&quot;ff party&quot;&gt;McGuinness, John&lt;/td&gt;
+                                            &lt;td class=&quot;first-pref&quot;&gt;
+                                                
+                                                    12.92%
+                                                
+                                                
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    
+                                        &lt;tr&gt;
+                                            &lt;td class=&quot;lab party&quot;&gt;Phelan, Ann&lt;/td&gt;
+                                            &lt;td class=&quot;first-pref&quot;&gt;
+                                                
+                                                    10.95%
+                                                
+                                                
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    
+                                        &lt;tr&gt;
+                                            &lt;td class=&quot;fg party&quot;&gt;Deering, Pat&lt;/td&gt;
+                                            &lt;td class=&quot;first-pref&quot;&gt;
+                                                
+                                                    10.13%
+                                                
+                                                
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    
+                                &lt;/tbody&gt;
+                            &lt;/table&gt;
+
+                            &lt;a href=&quot;/election-2016/carlow-kilkenny&quot; aria-role=&quot;button&quot; class=&quot;it-btn it-btn--outline it-btn--small&quot;&gt;View full results&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;                
+            &lt;/div&gt; 
+    &lt;/div&gt;</code></pre></div></div></div></div><h1 id="sg-markup-Charts" class="sg-h1 sg-title">Charts</h1><div class="sg-section-group"><div class="sg-section"><h2 id="sg-markup-Charts-national-spread-html" class="sg-h2 sg-title">national spread</h2><div class="sg-sub-section sg-example"><div class="national-spread"><h3 class="ge-sub-heading">% of 1<sup>st</sup> preference votes </h3>
+<table class="ge__spread">
+    <tbody><tr class="spread__bars">
+
+        
+
+        <td class="spread__slice spread__slice-party constituency-profile__spread fg" style="width: 36.103531005572%;">
+        </td>
+
+        
+
+        <td class="spread__slice spread__slice-party constituency-profile__spread lab" style="width: 19.447125442327%;">
+        </td>
+
+        
+
+        <td class="spread__slice spread__slice-party constituency-profile__spread ff" style="width: 17.445737378505%;">
+        </td>
+
+        
+
+        <td class="spread__slice spread__slice-party constituency-profile__spread io" style="width: 12.643811203503368%;">
+        </td>
+
+        
+
+        <td class="spread__slice spread__slice-party constituency-profile__spread sf" style="width: 9.9380775811479%;">
+        </td>
+
+        
+
+        <td class="spread__slice spread__slice-party constituency-profile__spread ula" style="width: 2.5734126778598%;">
+        </td>
+
+        
+
+        <td class="spread__slice spread__slice-party constituency-profile__spread gp" style="width: 1.848304711085%;">
+        </td>
+
+        
+    </tr>
+</tbody></table></div>
+
+<div class="national-legend"><ul class="legend__label">
+    <li>Party</li>
+    <li>% 1st Pref</li>
+    <li>Seats</li>
+</ul>
+
+<div class="ge__legend">
+    <ul class="legend__list">
+        
+                <li class="legend__item">
+                    <span class="legend__party-color fg"></span>
+                    <span class="legend__party-name">FG</span>
+                    <span class="legend__party-pref">36.10%</span>
+
+                    
+
+                    <span class="legend__party-seats">76</span>
+                </li>
+            
+                <li class="legend__item">
+                    <span class="legend__party-color lab"></span>
+                    <span class="legend__party-name">Lab</span>
+                    <span class="legend__party-pref">19.45%</span>
+
+                    
+
+                    <span class="legend__party-seats">37</span>
+                </li>
+            
+                <li class="legend__item">
+                    <span class="legend__party-color ff"></span>
+                    <span class="legend__party-name">FF</span>
+                    <span class="legend__party-pref">17.45%</span>
+
+                    
+
+                    <span class="legend__party-seats">20</span>
+                </li>
+            
+                <li class="legend__item">
+                    <span class="legend__party-color io"></span>
+                    <span class="legend__party-name">IO</span>
+                    <span class="legend__party-pref">12.64%</span>
+
+                    
+
+                    <span class="legend__party-seats">14</span>
+                </li>
+            
+                <li class="legend__item">
+                    <span class="legend__party-color sf"></span>
+                    <span class="legend__party-name">SF</span>
+                    <span class="legend__party-pref">9.94%</span>
+
+                    
+
+                    <span class="legend__party-seats">14</span>
+                </li>
+            
+                <li class="legend__item">
+                    <span class="legend__party-color ula"></span>
+                    <span class="legend__party-name">ULA</span>
+                    <span class="legend__party-pref">2.57%</span>
+
+                    
+
+                    <span class="legend__party-seats">5</span>
+                </li>
+            
+                <li class="legend__item">
+                    <span class="legend__party-color gp"></span>
+                    <span class="legend__party-name">GP</span>
+                    <span class="legend__party-pref">1.85%</span>
+
+                    
+
+                    <span class="legend__party-seats">0</span>
+                </li>
+            
+    </ul>
+</div>
+</div>
+
+<div class="national-indicators"><ul class="legend__indicators">
+
+    <li><b>43 of 43</b> Constituencies complete</li>
+    <li><b>43 of 43</b> 1st preference complete</li>
+    <li><b>165 of 166</b> Seats complete</li>
+
+</ul></div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;national-spread&quot;&gt;&lt;h3 class=&quot;ge-sub-heading&quot;&gt;% of 1&lt;sup&gt;st&lt;/sup&gt; preference votes &lt;/h3&gt;
+&lt;table class=&quot;ge__spread&quot;&gt;
+    &lt;tbody&gt;&lt;tr class=&quot;spread__bars&quot;&gt;
+
+        
+
+        &lt;td class=&quot;spread__slice spread__slice-party constituency-profile__spread fg&quot; style=&quot;width: 36.103531005572%;&quot;&gt;
+        &lt;/td&gt;
+
+        
+
+        &lt;td class=&quot;spread__slice spread__slice-party constituency-profile__spread lab&quot; style=&quot;width: 19.447125442327%;&quot;&gt;
+        &lt;/td&gt;
+
+        
+
+        &lt;td class=&quot;spread__slice spread__slice-party constituency-profile__spread ff&quot; style=&quot;width: 17.445737378505%;&quot;&gt;
+        &lt;/td&gt;
+
+        
+
+        &lt;td class=&quot;spread__slice spread__slice-party constituency-profile__spread io&quot; style=&quot;width: 12.643811203503368%;&quot;&gt;
+        &lt;/td&gt;
+
+        
+
+        &lt;td class=&quot;spread__slice spread__slice-party constituency-profile__spread sf&quot; style=&quot;width: 9.9380775811479%;&quot;&gt;
+        &lt;/td&gt;
+
+        
+
+        &lt;td class=&quot;spread__slice spread__slice-party constituency-profile__spread ula&quot; style=&quot;width: 2.5734126778598%;&quot;&gt;
+        &lt;/td&gt;
+
+        
+
+        &lt;td class=&quot;spread__slice spread__slice-party constituency-profile__spread gp&quot; style=&quot;width: 1.848304711085%;&quot;&gt;
+        &lt;/td&gt;
+
+        
+    &lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+
+&lt;div class=&quot;national-legend&quot;&gt;&lt;ul class=&quot;legend__label&quot;&gt;
+    &lt;li&gt;Party&lt;/li&gt;
+    &lt;li&gt;% 1st Pref&lt;/li&gt;
+    &lt;li&gt;Seats&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;ge__legend&quot;&gt;
+    &lt;ul class=&quot;legend__list&quot;&gt;
+        
+                &lt;li class=&quot;legend__item&quot;&gt;
+                    &lt;span class=&quot;legend__party-color fg&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;legend__party-name&quot;&gt;FG&lt;/span&gt;
+                    &lt;span class=&quot;legend__party-pref&quot;&gt;36.10%&lt;/span&gt;
+
+                    
+
+                    &lt;span class=&quot;legend__party-seats&quot;&gt;76&lt;/span&gt;
+                &lt;/li&gt;
+            
+                &lt;li class=&quot;legend__item&quot;&gt;
+                    &lt;span class=&quot;legend__party-color lab&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;legend__party-name&quot;&gt;Lab&lt;/span&gt;
+                    &lt;span class=&quot;legend__party-pref&quot;&gt;19.45%&lt;/span&gt;
+
+                    
+
+                    &lt;span class=&quot;legend__party-seats&quot;&gt;37&lt;/span&gt;
+                &lt;/li&gt;
+            
+                &lt;li class=&quot;legend__item&quot;&gt;
+                    &lt;span class=&quot;legend__party-color ff&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;legend__party-name&quot;&gt;FF&lt;/span&gt;
+                    &lt;span class=&quot;legend__party-pref&quot;&gt;17.45%&lt;/span&gt;
+
+                    
+
+                    &lt;span class=&quot;legend__party-seats&quot;&gt;20&lt;/span&gt;
+                &lt;/li&gt;
+            
+                &lt;li class=&quot;legend__item&quot;&gt;
+                    &lt;span class=&quot;legend__party-color io&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;legend__party-name&quot;&gt;IO&lt;/span&gt;
+                    &lt;span class=&quot;legend__party-pref&quot;&gt;12.64%&lt;/span&gt;
+
+                    
+
+                    &lt;span class=&quot;legend__party-seats&quot;&gt;14&lt;/span&gt;
+                &lt;/li&gt;
+            
+                &lt;li class=&quot;legend__item&quot;&gt;
+                    &lt;span class=&quot;legend__party-color sf&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;legend__party-name&quot;&gt;SF&lt;/span&gt;
+                    &lt;span class=&quot;legend__party-pref&quot;&gt;9.94%&lt;/span&gt;
+
+                    
+
+                    &lt;span class=&quot;legend__party-seats&quot;&gt;14&lt;/span&gt;
+                &lt;/li&gt;
+            
+                &lt;li class=&quot;legend__item&quot;&gt;
+                    &lt;span class=&quot;legend__party-color ula&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;legend__party-name&quot;&gt;ULA&lt;/span&gt;
+                    &lt;span class=&quot;legend__party-pref&quot;&gt;2.57%&lt;/span&gt;
+
+                    
+
+                    &lt;span class=&quot;legend__party-seats&quot;&gt;5&lt;/span&gt;
+                &lt;/li&gt;
+            
+                &lt;li class=&quot;legend__item&quot;&gt;
+                    &lt;span class=&quot;legend__party-color gp&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;legend__party-name&quot;&gt;GP&lt;/span&gt;
+                    &lt;span class=&quot;legend__party-pref&quot;&gt;1.85%&lt;/span&gt;
+
+                    
+
+                    &lt;span class=&quot;legend__party-seats&quot;&gt;0&lt;/span&gt;
+                &lt;/li&gt;
+            
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;national-indicators&quot;&gt;&lt;ul class=&quot;legend__indicators&quot;&gt;
+
+    &lt;li&gt;&lt;b&gt;43 of 43&lt;/b&gt; Constituencies complete&lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;43 of 43&lt;/b&gt; 1st preference complete&lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;165 of 166&lt;/b&gt; Seats complete&lt;/li&gt;
+
+&lt;/ul&gt;&lt;/div&gt;</code></pre></div></div></div></div><h1 id="sg-markup-Ganimation" class="sg-h1 sg-title">Ganimation</h1><div class="sg-section-group"><div class="sg-section"><h2 id="sg-markup-Ganimation-ganimation-html" class="sg-h2 sg-title">ganimation</h2><div class="sg-sub-section sg-example">
+    <div class="constituency-lookup-failed" style="display: none">
+        Error finding constituency in the list. Check the SEO title.
+    </div>
+
+    <div class="constituency-spread"></div>
+    <div class="constituency-legend"></div>
+    <div class="constituency-meta"></div>
+    <div class="constituency-seats"></div>
+    <div class="constituency-count-table" role="grid" aria-labelledby="constituency results table" aria-readonly="true"></div>
+    <div class="ganimation-container"><h3 class="ge-sub-heading">Story of the count</h3><div class="ganimation-ctrl-btns"><button class="ganimation-play-btn"><i class="fa fa-play"></i> Play</button><button class="ganimation-pause-btn" disabled="disabled"><i class="fa fa-pause"></i> Pause</button><button class="ganimation-restart-btn" disabled="disabled"><i class="fa fa-refresh"></i> Restart</button><span class="ganimation-count-id">Count: 1 / 9</span></div><table class="ganimation-table" style="height: 630px;"><tbody><tr class="candidate-row" data-candidate-id="0" data-sort-order="0" style="height: 35px; line-height: 35px; top: 0px;"><td class="candidate-name" style="line-height: 35px;">Ó Caoláin, Caoimhghín</td><td class="candidate-votes" style="line-height: 35px;"><span class="candidate-votes-fill party-SF" data-votes="11913" style="width: 100.278%;">11,913</span></td></tr><tr class="candidate-row" data-candidate-id="1" data-sort-order="1" style="height: 35px; line-height: 35px; top: 45px;"><td class="candidate-name" style="line-height: 35px;">Conlan, Seán</td><td class="candidate-votes" style="line-height: 35px;"><span class="candidate-votes-fill party-FG" data-votes="7864" style="width: 66.1953%;">7,864</span></td></tr><tr class="candidate-row" data-candidate-id="2" data-sort-order="2" style="height: 35px; line-height: 35px; top: 90px;"><td class="candidate-name" style="line-height: 35px;">Conlon, Margaret</td><td class="candidate-votes" style="line-height: 35px;"><span class="candidate-votes-fill party-FF" data-votes="4658" style="width: 39.2088%;">4,658</span></td></tr><tr class="candidate-row" data-candidate-id="3" data-sort-order="3" style="height: 35px; line-height: 35px; top: 135px;"><td class="candidate-name" style="line-height: 35px;">Duffy, Joseph</td><td class="candidate-votes" style="line-height: 35px;"><span class="candidate-votes-fill party-IND" data-votes="129" style="width: 1.08586%;">129</span></td></tr><tr class="candidate-row" data-candidate-id="4" data-sort-order="4" style="height: 35px; line-height: 35px; top: 180px;"><td class="candidate-name" style="line-height: 35px;">Forde, Caroline</td><td class="candidate-votes" style="line-height: 35px;"><span class="candidate-votes-fill party-IND" data-votes="1912" style="width: 16.0943%;">1,912</span></td></tr><tr class="candidate-row" data-candidate-id="5" data-sort-order="5" style="height: 35px; line-height: 35px; top: 225px;"><td class="candidate-name" style="line-height: 35px;">Hogan, Liam</td><td class="candidate-votes" style="line-height: 35px;"><span class="candidate-votes-fill party-LAB" data-votes="4011" style="width: 33.7626%;">4,011</span></td></tr><tr class="candidate-row" data-candidate-id="6" data-sort-order="6" style="height: 35px; line-height: 35px; top: 270px;"><td class="candidate-name" style="line-height: 35px;">Humphreys, Heather</td><td class="candidate-votes" style="line-height: 35px;"><span class="candidate-votes-fill party-FG" data-votes="8144" style="width: 68.5522%;">8,144</span></td></tr><tr class="candidate-row" data-candidate-id="7" data-sort-order="7" style="height: 35px; line-height: 35px; top: 315px;"><td class="candidate-name" style="line-height: 35px;">Lonergan, Darcy</td><td class="candidate-votes" style="line-height: 35px;"><span class="candidate-votes-fill party-GP" data-votes="530" style="width: 4.46128%;">530</span></td></tr><tr class="candidate-row" data-candidate-id="8" data-sort-order="8" style="height: 35px; line-height: 35px; top: 360px;"><td class="candidate-name" style="line-height: 35px;">McGuirk, John</td><td class="candidate-votes" style="line-height: 35px;"><span class="candidate-votes-fill party-IND" data-votes="1708" style="width: 14.3771%;">1,708</span></td></tr><tr class="candidate-row" data-candidate-id="9" data-sort-order="9" style="height: 35px; line-height: 35px; top: 405px;"><td class="candidate-name" style="line-height: 35px;">McVitty, Peter</td><td class="candidate-votes" style="line-height: 35px;"><span class="candidate-votes-fill party-FG" data-votes="3858" style="width: 32.4747%;">3,858</span></td></tr><tr class="candidate-row" data-candidate-id="10" data-sort-order="10" style="height: 35px; line-height: 35px; top: 450px;"><td class="candidate-name" style="line-height: 35px;">O'Reilly, Joe</td><td class="candidate-votes" style="line-height: 35px;"><span class="candidate-votes-fill party-FG" data-votes="8333" style="width: 70.1431%;">8,333</span></td></tr><tr class="candidate-row" data-candidate-id="11" data-sort-order="11" style="height: 35px; line-height: 35px; top: 495px;"><td class="candidate-name" style="line-height: 35px;">Reilly, Kathryn</td><td class="candidate-votes" style="line-height: 35px;"><span class="candidate-votes-fill party-SF" data-votes="6539" style="width: 55.0421%;">6,539</span></td></tr><tr class="candidate-row" data-candidate-id="12" data-sort-order="12" style="height: 35px; line-height: 35px; top: 540px;"><td class="candidate-name" style="line-height: 35px;">Smith, Brendan</td><td class="candidate-votes" style="line-height: 35px;"><span class="candidate-votes-fill party-FF" data-votes="9702" style="width: 81.6667%;">9,702</span></td></tr><tr class="candidate-row" data-candidate-id="13" data-sort-order="13" style="height: 35px; line-height: 35px; top: 585px;"><td class="candidate-name" style="line-height: 35px;">Treanor, Seamus</td><td class="candidate-votes" style="line-height: 35px;"><span class="candidate-votes-fill party-IND" data-votes="1974" style="width: 16.6162%;">1,974</span></td></tr></tbody><span class="ganimation-border ganimation-elected-bar" style="top: 34.9206%;"></span><span class="ganimation-border ganimation-quota-bar"></span></table></div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="http://www.irishtimes.com/static/js/ejs.js"></script>
+    <script src="../plugins/js/jquery.constituency-page.js"></script>
+    <script src="../plugins/js/result-table.js"></script>
+    <script src="../plugins/js/velocity.min.js"></script>
+    <script src="../plugins/js/jquery.ganimation.js"></script>
+    <script>
+
+        var jq = jQuery.noConflict(true);
+
+        var constituencyLookup = [
+            {
+                "name": "Carlow-Kilkenny",
+                "code": "CKY",
+                "region": "Leinster",
+                "seats": 5,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Cavan-Monaghan",
+                "code": "CMN",
+                "region": "Ulster-Connacht",
+                "seats": 5,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Clare",
+                "code": "CLR",
+                "region": "Munster",
+                "seats": 4,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Cork East",
+                "code": "CET",
+                "region": "Munster",
+                "seats": 4,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Cork North-Central",
+                "code": "CNC",
+                "region": "Munster",
+                "seats": 4,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Cork North-West",
+                "code": "CNW",
+                "region": "Munster",
+                "seats": 3,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Cork South-Central",
+                "code": "CSC",
+                "region": "Munster",
+                "seats": 5,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Cork South-West",
+                "code": "CSW",
+                "region": "Munster",
+                "seats": 3,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Donegal North East",
+                "code": "DNE",
+                "region": "Ulster-Connacht",
+                "seats": 3,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Donegal South-West",
+                "code": "DSW",
+                "region": "Ulster-Connacht",
+                "seats": 3,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Dublin Central",
+                "code": "DCL",
+                "region": "Dublin",
+                "seats": 4,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Dublin Mid-West",
+                "code": "DMW",
+                "region": "Dublin",
+                "seats": 4,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Dublin North",
+                "code": "DNO",
+                "region": "Dublin",
+                "seats": 4,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Dublin North Central",
+                "code": "DNC",
+                "region": "Dublin",
+                "seats": 3,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Dublin North East",
+                "code": "DNT",
+                "region": "Dublin",
+                "seats": 3,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Dublin North-West",
+                "code": "DNW",
+                "region": "Dublin",
+                "seats": 3,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Dublin South",
+                "code": "DSO",
+                "region": "Dublin",
+                "seats": 5,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Dublin South-Central",
+                "code": "DSC",
+                "region": "Dublin",
+                "seats": 5,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Dublin South-East",
+                "code": "DSE",
+                "region": "Dublin",
+                "seats": 4,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Dublin South-West",
+                "code": "DST",
+                "region": "Dublin",
+                "seats": 4,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Dublin West",
+                "code": "DWT",
+                "region": "Dublin",
+                "seats": 4,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Dún Laoghaire",
+                "code": "DLR",
+                "region": "Dublin",
+                "seats": 4,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Galway East",
+                "code": "GET",
+                "region": "Ulster-Connacht",
+                "seats": 4,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Galway West",
+                "code": "GWT",
+                "region": "Ulster-Connacht",
+                "seats": 5,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Kerry North-Limerick West",
+                "code": "KNL",
+                "region": "Munster",
+                "seats": 3,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Kerry South",
+                "code": "KYS",
+                "region": "Munster",
+                "seats": 3,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Kildare North",
+                "code": "KNO",
+                "region": "Leinster",
+                "seats": 4,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Kildare South",
+                "code": "KSO",
+                "region": "Leinster",
+                "seats": 3,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Laois-Offaly",
+                "code": "LOY",
+                "region": "Leinster",
+                "seats": 5,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Limerick",
+                "code": "LIM",
+                "region": "Munster",
+                "seats": 3,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Limerick City",
+                "code": "LMC",
+                "region": "Munster",
+                "seats": 4,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Longford-Westmeath",
+                "code": "LRW",
+                "region": "Leinster",
+                "seats": 4,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Louth",
+                "code": "LTH",
+                "region": "Leinster",
+                "seats": 5,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Mayo",
+                "code": "MYO",
+                "region": "Ulster-Connacht",
+                "seats": 5,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Meath East",
+                "code": "MTE",
+                "region": "Leinster",
+                "seats": 3,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Meath West",
+                "code": "MTW",
+                "region": "Leinster",
+                "seats": 3,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Roscommon-South Leitrim",
+                "code": "RLS",
+                "region": "Ulster-Connacht",
+                "seats": 3,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Sligo-North Leitrim",
+                "code": "SLN",
+                "region": "Ulster-Connacht",
+                "seats": 3,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Tipperary North",
+                "code": "TNO",
+                "region": "Munster",
+                "seats": 3,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Tipperary South",
+                "code": "TSO",
+                "region": "Munster",
+                "seats": 3,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Waterford",
+                "code": "WRD",
+                "region": "Leinster",
+                "seats": 4,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Wexford",
+                "code": "WXD",
+                "region": "Leinster",
+                "seats": 5,
+                "status": "Results Pending"
+            },
+            {
+                "name": "Wicklow",
+                "code": "WLW",
+                "region": "Leinster",
+                "seats": 5,
+                "status": "Results Pending"
+            }
+        ];
+
+        var constituency = jq('title').text().split('|')[0];
+        constituency = constituency.substr(0, constituency.indexOf("constituency")).trim();
+
+        jq(document).ready(function(){
+
+            // FIXME: Remove in production
+            var found = false;
+
+            for(var i = 0; i < constituencyLookup.length; i++){
+
+                if(constituencyLookup[i].name.toLowerCase() === constituency.toLowerCase()){
+
+                    // FIXME: Remove in production
+                    found = true;
+
+                    var options = {
+                        electionCode: "gen2011",
+                        constituencyCode: constituencyLookup[i].code,
+                        seats: constituencyLookup[i].seats
+                    };
+
+                    jq.fn.initConstituency(options, function(data){
+
+                        if(!data.err) {
+                            jq(".constituency-spread").drawSpread(data);
+                            jq(".constituency-legend").drawLegend(data);
+                            jq(".constituency-meta").drawMeta(data);
+                            jq(".constituency-count-table").drawCountTable(data, function(){
+                                jq(".const-results-table").table().data("table").refresh();
+                            });
+                        } else {
+                            jq(".constituency-spread").nullState("spread");
+                            jq(".constituency-legend").nullState("legend");
+                            jq(".constituency-meta").nullState("meta");
+                            jq(".constituency-count-table").nullStateTable(data, function () {
+                                jq(".const-results-table").table().data("table").refresh();
+                            });
+                        }
+
+                    });
+
+                    var ganimationContainer = jq(".ganimation-container");
+
+                    ganimationContainer.initConstituencyAnimation(options, function() {
+                        var playBtn = jq('.ganimation-play-btn');
+                        var pauseBtn = jq('.ganimation-pause-btn');
+                        var restartBtn = jq('.ganimation-restart-btn');
+
+                        playBtn.attr('disabled', false);
+                        playBtn.click(function () {
+                            playBtn.attr('disabled', true);
+                            pauseBtn.attr('disabled', false);
+                            restartBtn.attr('disabled', false);
+                            ganimationContainer.playCountAnimation()
+                        });
+
+                        pauseBtn.click(function () {
+                            playBtn.attr('disabled', false);
+                            pauseBtn.attr('disabled', true);
+                            restartBtn.attr('disabled', false);
+                            ganimationContainer.pauseCountAnimation()
+                        });
+
+                        restartBtn.click(function () {
+                            playBtn.attr('disabled', false);
+                            pauseBtn.attr('disabled', true);
+                            restartBtn.attr('disabled', true);
+                            ganimationContainer.restartCountAnimation()
+                        });
+                    });
+
+                    break;
+                }
+            }
+
+            // FIXME: Remove in production
+            if(found === false) {
+                // Not found in the lookup
+                jq(".constituency-lookup-failed").css("display", "block");
+            }
+        });
+
+        jq(document).ajaxError(function(){
+            jq(".constituency-spread").nullState("spread");
+            jq(".constituency-legend").nullState("legend");
+            jq(".constituency-meta").nullState("meta");
+            jq(".constituency-count-table").nullStateTable(data, function(){
+                jq(".const-results-table").table().data("table").refresh();
+            });
+        });
+
+    </script>
+</div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">
+    &lt;div class=&quot;constituency-lookup-failed&quot; style=&quot;display: none&quot;&gt;
+        Error finding constituency in the list. Check the SEO title.
+    &lt;/div&gt;
+
+    &lt;div class=&quot;constituency-spread&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;constituency-legend&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;constituency-meta&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;constituency-seats&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;constituency-count-table&quot; role=&quot;grid&quot; aria-labelledby=&quot;constituency results table&quot; aria-readonly=&quot;true&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;ganimation-container&quot;&gt;&lt;h3 class=&quot;ge-sub-heading&quot;&gt;Story of the count&lt;/h3&gt;&lt;div class=&quot;ganimation-ctrl-btns&quot;&gt;&lt;button class=&quot;ganimation-play-btn&quot;&gt;&lt;i class=&quot;fa fa-play&quot;&gt;&lt;/i&gt; Play&lt;/button&gt;&lt;button class=&quot;ganimation-pause-btn&quot; disabled=&quot;disabled&quot;&gt;&lt;i class=&quot;fa fa-pause&quot;&gt;&lt;/i&gt; Pause&lt;/button&gt;&lt;button class=&quot;ganimation-restart-btn&quot; disabled=&quot;disabled&quot;&gt;&lt;i class=&quot;fa fa-refresh&quot;&gt;&lt;/i&gt; Restart&lt;/button&gt;&lt;span class=&quot;ganimation-count-id&quot;&gt;Count: 1 / 9&lt;/span&gt;&lt;/div&gt;&lt;table class=&quot;ganimation-table&quot; style=&quot;height: 630px;&quot;&gt;&lt;tbody&gt;&lt;tr class=&quot;candidate-row&quot; data-candidate-id=&quot;0&quot; data-sort-order=&quot;0&quot; style=&quot;height: 35px; line-height: 35px; top: 0px;&quot;&gt;&lt;td class=&quot;candidate-name&quot; style=&quot;line-height: 35px;&quot;&gt;Ó Caoláin, Caoimhghín&lt;/td&gt;&lt;td class=&quot;candidate-votes&quot; style=&quot;line-height: 35px;&quot;&gt;&lt;span class=&quot;candidate-votes-fill party-SF&quot; data-votes=&quot;11913&quot; style=&quot;width: 100.278%;&quot;&gt;11,913&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;candidate-row&quot; data-candidate-id=&quot;1&quot; data-sort-order=&quot;1&quot; style=&quot;height: 35px; line-height: 35px; top: 45px;&quot;&gt;&lt;td class=&quot;candidate-name&quot; style=&quot;line-height: 35px;&quot;&gt;Conlan, Seán&lt;/td&gt;&lt;td class=&quot;candidate-votes&quot; style=&quot;line-height: 35px;&quot;&gt;&lt;span class=&quot;candidate-votes-fill party-FG&quot; data-votes=&quot;7864&quot; style=&quot;width: 66.1953%;&quot;&gt;7,864&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;candidate-row&quot; data-candidate-id=&quot;2&quot; data-sort-order=&quot;2&quot; style=&quot;height: 35px; line-height: 35px; top: 90px;&quot;&gt;&lt;td class=&quot;candidate-name&quot; style=&quot;line-height: 35px;&quot;&gt;Conlon, Margaret&lt;/td&gt;&lt;td class=&quot;candidate-votes&quot; style=&quot;line-height: 35px;&quot;&gt;&lt;span class=&quot;candidate-votes-fill party-FF&quot; data-votes=&quot;4658&quot; style=&quot;width: 39.2088%;&quot;&gt;4,658&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;candidate-row&quot; data-candidate-id=&quot;3&quot; data-sort-order=&quot;3&quot; style=&quot;height: 35px; line-height: 35px; top: 135px;&quot;&gt;&lt;td class=&quot;candidate-name&quot; style=&quot;line-height: 35px;&quot;&gt;Duffy, Joseph&lt;/td&gt;&lt;td class=&quot;candidate-votes&quot; style=&quot;line-height: 35px;&quot;&gt;&lt;span class=&quot;candidate-votes-fill party-IND&quot; data-votes=&quot;129&quot; style=&quot;width: 1.08586%;&quot;&gt;129&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;candidate-row&quot; data-candidate-id=&quot;4&quot; data-sort-order=&quot;4&quot; style=&quot;height: 35px; line-height: 35px; top: 180px;&quot;&gt;&lt;td class=&quot;candidate-name&quot; style=&quot;line-height: 35px;&quot;&gt;Forde, Caroline&lt;/td&gt;&lt;td class=&quot;candidate-votes&quot; style=&quot;line-height: 35px;&quot;&gt;&lt;span class=&quot;candidate-votes-fill party-IND&quot; data-votes=&quot;1912&quot; style=&quot;width: 16.0943%;&quot;&gt;1,912&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;candidate-row&quot; data-candidate-id=&quot;5&quot; data-sort-order=&quot;5&quot; style=&quot;height: 35px; line-height: 35px; top: 225px;&quot;&gt;&lt;td class=&quot;candidate-name&quot; style=&quot;line-height: 35px;&quot;&gt;Hogan, Liam&lt;/td&gt;&lt;td class=&quot;candidate-votes&quot; style=&quot;line-height: 35px;&quot;&gt;&lt;span class=&quot;candidate-votes-fill party-LAB&quot; data-votes=&quot;4011&quot; style=&quot;width: 33.7626%;&quot;&gt;4,011&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;candidate-row&quot; data-candidate-id=&quot;6&quot; data-sort-order=&quot;6&quot; style=&quot;height: 35px; line-height: 35px; top: 270px;&quot;&gt;&lt;td class=&quot;candidate-name&quot; style=&quot;line-height: 35px;&quot;&gt;Humphreys, Heather&lt;/td&gt;&lt;td class=&quot;candidate-votes&quot; style=&quot;line-height: 35px;&quot;&gt;&lt;span class=&quot;candidate-votes-fill party-FG&quot; data-votes=&quot;8144&quot; style=&quot;width: 68.5522%;&quot;&gt;8,144&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;candidate-row&quot; data-candidate-id=&quot;7&quot; data-sort-order=&quot;7&quot; style=&quot;height: 35px; line-height: 35px; top: 315px;&quot;&gt;&lt;td class=&quot;candidate-name&quot; style=&quot;line-height: 35px;&quot;&gt;Lonergan, Darcy&lt;/td&gt;&lt;td class=&quot;candidate-votes&quot; style=&quot;line-height: 35px;&quot;&gt;&lt;span class=&quot;candidate-votes-fill party-GP&quot; data-votes=&quot;530&quot; style=&quot;width: 4.46128%;&quot;&gt;530&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;candidate-row&quot; data-candidate-id=&quot;8&quot; data-sort-order=&quot;8&quot; style=&quot;height: 35px; line-height: 35px; top: 360px;&quot;&gt;&lt;td class=&quot;candidate-name&quot; style=&quot;line-height: 35px;&quot;&gt;McGuirk, John&lt;/td&gt;&lt;td class=&quot;candidate-votes&quot; style=&quot;line-height: 35px;&quot;&gt;&lt;span class=&quot;candidate-votes-fill party-IND&quot; data-votes=&quot;1708&quot; style=&quot;width: 14.3771%;&quot;&gt;1,708&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;candidate-row&quot; data-candidate-id=&quot;9&quot; data-sort-order=&quot;9&quot; style=&quot;height: 35px; line-height: 35px; top: 405px;&quot;&gt;&lt;td class=&quot;candidate-name&quot; style=&quot;line-height: 35px;&quot;&gt;McVitty, Peter&lt;/td&gt;&lt;td class=&quot;candidate-votes&quot; style=&quot;line-height: 35px;&quot;&gt;&lt;span class=&quot;candidate-votes-fill party-FG&quot; data-votes=&quot;3858&quot; style=&quot;width: 32.4747%;&quot;&gt;3,858&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;candidate-row&quot; data-candidate-id=&quot;10&quot; data-sort-order=&quot;10&quot; style=&quot;height: 35px; line-height: 35px; top: 450px;&quot;&gt;&lt;td class=&quot;candidate-name&quot; style=&quot;line-height: 35px;&quot;&gt;O'Reilly, Joe&lt;/td&gt;&lt;td class=&quot;candidate-votes&quot; style=&quot;line-height: 35px;&quot;&gt;&lt;span class=&quot;candidate-votes-fill party-FG&quot; data-votes=&quot;8333&quot; style=&quot;width: 70.1431%;&quot;&gt;8,333&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;candidate-row&quot; data-candidate-id=&quot;11&quot; data-sort-order=&quot;11&quot; style=&quot;height: 35px; line-height: 35px; top: 495px;&quot;&gt;&lt;td class=&quot;candidate-name&quot; style=&quot;line-height: 35px;&quot;&gt;Reilly, Kathryn&lt;/td&gt;&lt;td class=&quot;candidate-votes&quot; style=&quot;line-height: 35px;&quot;&gt;&lt;span class=&quot;candidate-votes-fill party-SF&quot; data-votes=&quot;6539&quot; style=&quot;width: 55.0421%;&quot;&gt;6,539&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;candidate-row&quot; data-candidate-id=&quot;12&quot; data-sort-order=&quot;12&quot; style=&quot;height: 35px; line-height: 35px; top: 540px;&quot;&gt;&lt;td class=&quot;candidate-name&quot; style=&quot;line-height: 35px;&quot;&gt;Smith, Brendan&lt;/td&gt;&lt;td class=&quot;candidate-votes&quot; style=&quot;line-height: 35px;&quot;&gt;&lt;span class=&quot;candidate-votes-fill party-FF&quot; data-votes=&quot;9702&quot; style=&quot;width: 81.6667%;&quot;&gt;9,702&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;candidate-row&quot; data-candidate-id=&quot;13&quot; data-sort-order=&quot;13&quot; style=&quot;height: 35px; line-height: 35px; top: 585px;&quot;&gt;&lt;td class=&quot;candidate-name&quot; style=&quot;line-height: 35px;&quot;&gt;Treanor, Seamus&lt;/td&gt;&lt;td class=&quot;candidate-votes&quot; style=&quot;line-height: 35px;&quot;&gt;&lt;span class=&quot;candidate-votes-fill party-IND&quot; data-votes=&quot;1974&quot; style=&quot;width: 16.6162%;&quot;&gt;1,974&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;span class=&quot;ganimation-border ganimation-elected-bar&quot; style=&quot;top: 34.9206%;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;ganimation-border ganimation-quota-bar&quot;&gt;&lt;/span&gt;&lt;/table&gt;&lt;/div&gt;
+
+    &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;http://code.jquery.com/jquery-migrate-1.2.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;http://www.irishtimes.com/static/js/ejs.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;../plugins/js/jquery.constituency-page.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;../plugins/js/result-table.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;../plugins/js/velocity.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;../plugins/js/jquery.ganimation.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+
+        var jq = jQuery.noConflict(true);
+
+        var constituencyLookup = [
+            {
+                &quot;name&quot;: &quot;Carlow-Kilkenny&quot;,
+                &quot;code&quot;: &quot;CKY&quot;,
+                &quot;region&quot;: &quot;Leinster&quot;,
+                &quot;seats&quot;: 5,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Cavan-Monaghan&quot;,
+                &quot;code&quot;: &quot;CMN&quot;,
+                &quot;region&quot;: &quot;Ulster-Connacht&quot;,
+                &quot;seats&quot;: 5,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Clare&quot;,
+                &quot;code&quot;: &quot;CLR&quot;,
+                &quot;region&quot;: &quot;Munster&quot;,
+                &quot;seats&quot;: 4,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Cork East&quot;,
+                &quot;code&quot;: &quot;CET&quot;,
+                &quot;region&quot;: &quot;Munster&quot;,
+                &quot;seats&quot;: 4,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Cork North-Central&quot;,
+                &quot;code&quot;: &quot;CNC&quot;,
+                &quot;region&quot;: &quot;Munster&quot;,
+                &quot;seats&quot;: 4,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Cork North-West&quot;,
+                &quot;code&quot;: &quot;CNW&quot;,
+                &quot;region&quot;: &quot;Munster&quot;,
+                &quot;seats&quot;: 3,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Cork South-Central&quot;,
+                &quot;code&quot;: &quot;CSC&quot;,
+                &quot;region&quot;: &quot;Munster&quot;,
+                &quot;seats&quot;: 5,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Cork South-West&quot;,
+                &quot;code&quot;: &quot;CSW&quot;,
+                &quot;region&quot;: &quot;Munster&quot;,
+                &quot;seats&quot;: 3,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Donegal North East&quot;,
+                &quot;code&quot;: &quot;DNE&quot;,
+                &quot;region&quot;: &quot;Ulster-Connacht&quot;,
+                &quot;seats&quot;: 3,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Donegal South-West&quot;,
+                &quot;code&quot;: &quot;DSW&quot;,
+                &quot;region&quot;: &quot;Ulster-Connacht&quot;,
+                &quot;seats&quot;: 3,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Dublin Central&quot;,
+                &quot;code&quot;: &quot;DCL&quot;,
+                &quot;region&quot;: &quot;Dublin&quot;,
+                &quot;seats&quot;: 4,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Dublin Mid-West&quot;,
+                &quot;code&quot;: &quot;DMW&quot;,
+                &quot;region&quot;: &quot;Dublin&quot;,
+                &quot;seats&quot;: 4,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Dublin North&quot;,
+                &quot;code&quot;: &quot;DNO&quot;,
+                &quot;region&quot;: &quot;Dublin&quot;,
+                &quot;seats&quot;: 4,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Dublin North Central&quot;,
+                &quot;code&quot;: &quot;DNC&quot;,
+                &quot;region&quot;: &quot;Dublin&quot;,
+                &quot;seats&quot;: 3,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Dublin North East&quot;,
+                &quot;code&quot;: &quot;DNT&quot;,
+                &quot;region&quot;: &quot;Dublin&quot;,
+                &quot;seats&quot;: 3,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Dublin North-West&quot;,
+                &quot;code&quot;: &quot;DNW&quot;,
+                &quot;region&quot;: &quot;Dublin&quot;,
+                &quot;seats&quot;: 3,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Dublin South&quot;,
+                &quot;code&quot;: &quot;DSO&quot;,
+                &quot;region&quot;: &quot;Dublin&quot;,
+                &quot;seats&quot;: 5,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Dublin South-Central&quot;,
+                &quot;code&quot;: &quot;DSC&quot;,
+                &quot;region&quot;: &quot;Dublin&quot;,
+                &quot;seats&quot;: 5,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Dublin South-East&quot;,
+                &quot;code&quot;: &quot;DSE&quot;,
+                &quot;region&quot;: &quot;Dublin&quot;,
+                &quot;seats&quot;: 4,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Dublin South-West&quot;,
+                &quot;code&quot;: &quot;DST&quot;,
+                &quot;region&quot;: &quot;Dublin&quot;,
+                &quot;seats&quot;: 4,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Dublin West&quot;,
+                &quot;code&quot;: &quot;DWT&quot;,
+                &quot;region&quot;: &quot;Dublin&quot;,
+                &quot;seats&quot;: 4,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Dún Laoghaire&quot;,
+                &quot;code&quot;: &quot;DLR&quot;,
+                &quot;region&quot;: &quot;Dublin&quot;,
+                &quot;seats&quot;: 4,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Galway East&quot;,
+                &quot;code&quot;: &quot;GET&quot;,
+                &quot;region&quot;: &quot;Ulster-Connacht&quot;,
+                &quot;seats&quot;: 4,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Galway West&quot;,
+                &quot;code&quot;: &quot;GWT&quot;,
+                &quot;region&quot;: &quot;Ulster-Connacht&quot;,
+                &quot;seats&quot;: 5,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Kerry North-Limerick West&quot;,
+                &quot;code&quot;: &quot;KNL&quot;,
+                &quot;region&quot;: &quot;Munster&quot;,
+                &quot;seats&quot;: 3,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Kerry South&quot;,
+                &quot;code&quot;: &quot;KYS&quot;,
+                &quot;region&quot;: &quot;Munster&quot;,
+                &quot;seats&quot;: 3,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Kildare North&quot;,
+                &quot;code&quot;: &quot;KNO&quot;,
+                &quot;region&quot;: &quot;Leinster&quot;,
+                &quot;seats&quot;: 4,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Kildare South&quot;,
+                &quot;code&quot;: &quot;KSO&quot;,
+                &quot;region&quot;: &quot;Leinster&quot;,
+                &quot;seats&quot;: 3,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Laois-Offaly&quot;,
+                &quot;code&quot;: &quot;LOY&quot;,
+                &quot;region&quot;: &quot;Leinster&quot;,
+                &quot;seats&quot;: 5,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Limerick&quot;,
+                &quot;code&quot;: &quot;LIM&quot;,
+                &quot;region&quot;: &quot;Munster&quot;,
+                &quot;seats&quot;: 3,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Limerick City&quot;,
+                &quot;code&quot;: &quot;LMC&quot;,
+                &quot;region&quot;: &quot;Munster&quot;,
+                &quot;seats&quot;: 4,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Longford-Westmeath&quot;,
+                &quot;code&quot;: &quot;LRW&quot;,
+                &quot;region&quot;: &quot;Leinster&quot;,
+                &quot;seats&quot;: 4,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Louth&quot;,
+                &quot;code&quot;: &quot;LTH&quot;,
+                &quot;region&quot;: &quot;Leinster&quot;,
+                &quot;seats&quot;: 5,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Mayo&quot;,
+                &quot;code&quot;: &quot;MYO&quot;,
+                &quot;region&quot;: &quot;Ulster-Connacht&quot;,
+                &quot;seats&quot;: 5,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Meath East&quot;,
+                &quot;code&quot;: &quot;MTE&quot;,
+                &quot;region&quot;: &quot;Leinster&quot;,
+                &quot;seats&quot;: 3,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Meath West&quot;,
+                &quot;code&quot;: &quot;MTW&quot;,
+                &quot;region&quot;: &quot;Leinster&quot;,
+                &quot;seats&quot;: 3,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Roscommon-South Leitrim&quot;,
+                &quot;code&quot;: &quot;RLS&quot;,
+                &quot;region&quot;: &quot;Ulster-Connacht&quot;,
+                &quot;seats&quot;: 3,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Sligo-North Leitrim&quot;,
+                &quot;code&quot;: &quot;SLN&quot;,
+                &quot;region&quot;: &quot;Ulster-Connacht&quot;,
+                &quot;seats&quot;: 3,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Tipperary North&quot;,
+                &quot;code&quot;: &quot;TNO&quot;,
+                &quot;region&quot;: &quot;Munster&quot;,
+                &quot;seats&quot;: 3,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Tipperary South&quot;,
+                &quot;code&quot;: &quot;TSO&quot;,
+                &quot;region&quot;: &quot;Munster&quot;,
+                &quot;seats&quot;: 3,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Waterford&quot;,
+                &quot;code&quot;: &quot;WRD&quot;,
+                &quot;region&quot;: &quot;Leinster&quot;,
+                &quot;seats&quot;: 4,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Wexford&quot;,
+                &quot;code&quot;: &quot;WXD&quot;,
+                &quot;region&quot;: &quot;Leinster&quot;,
+                &quot;seats&quot;: 5,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Wicklow&quot;,
+                &quot;code&quot;: &quot;WLW&quot;,
+                &quot;region&quot;: &quot;Leinster&quot;,
+                &quot;seats&quot;: 5,
+                &quot;status&quot;: &quot;Results Pending&quot;
+            }
+        ];
+
+        var constituency = jq('title').text().split('|')[0];
+        constituency = constituency.substr(0, constituency.indexOf(&quot;constituency&quot;)).trim();
+
+        jq(document).ready(function(){
+
+            // FIXME: Remove in production
+            var found = false;
+
+            for(var i = 0; i &lt; constituencyLookup.length; i++){
+
+                if(constituencyLookup[i].name.toLowerCase() === constituency.toLowerCase()){
+
+                    // FIXME: Remove in production
+                    found = true;
+
+                    var options = {
+                        electionCode: &quot;gen2011&quot;,
+                        constituencyCode: constituencyLookup[i].code,
+                        seats: constituencyLookup[i].seats
+                    };
+
+                    jq.fn.initConstituency(options, function(data){
+
+                        if(!data.err) {
+                            jq(&quot;.constituency-spread&quot;).drawSpread(data);
+                            jq(&quot;.constituency-legend&quot;).drawLegend(data);
+                            jq(&quot;.constituency-meta&quot;).drawMeta(data);
+                            jq(&quot;.constituency-count-table&quot;).drawCountTable(data, function(){
+                                jq(&quot;.const-results-table&quot;).table().data(&quot;table&quot;).refresh();
+                            });
+                        } else {
+                            jq(&quot;.constituency-spread&quot;).nullState(&quot;spread&quot;);
+                            jq(&quot;.constituency-legend&quot;).nullState(&quot;legend&quot;);
+                            jq(&quot;.constituency-meta&quot;).nullState(&quot;meta&quot;);
+                            jq(&quot;.constituency-count-table&quot;).nullStateTable(data, function () {
+                                jq(&quot;.const-results-table&quot;).table().data(&quot;table&quot;).refresh();
+                            });
+                        }
+
+                    });
+
+                    var ganimationContainer = jq(&quot;.ganimation-container&quot;);
+
+                    ganimationContainer.initConstituencyAnimation(options, function() {
+                        var playBtn = jq('.ganimation-play-btn');
+                        var pauseBtn = jq('.ganimation-pause-btn');
+                        var restartBtn = jq('.ganimation-restart-btn');
+
+                        playBtn.attr('disabled', false);
+                        playBtn.click(function () {
+                            playBtn.attr('disabled', true);
+                            pauseBtn.attr('disabled', false);
+                            restartBtn.attr('disabled', false);
+                            ganimationContainer.playCountAnimation()
+                        });
+
+                        pauseBtn.click(function () {
+                            playBtn.attr('disabled', false);
+                            pauseBtn.attr('disabled', true);
+                            restartBtn.attr('disabled', false);
+                            ganimationContainer.pauseCountAnimation()
+                        });
+
+                        restartBtn.click(function () {
+                            playBtn.attr('disabled', false);
+                            pauseBtn.attr('disabled', true);
+                            restartBtn.attr('disabled', true);
+                            ganimationContainer.restartCountAnimation()
+                        });
+                    });
+
+                    break;
+                }
+            }
+
+            // FIXME: Remove in production
+            if(found === false) {
+                // Not found in the lookup
+                jq(&quot;.constituency-lookup-failed&quot;).css(&quot;display&quot;, &quot;block&quot;);
+            }
+        });
+
+        jq(document).ajaxError(function(){
+            jq(&quot;.constituency-spread&quot;).nullState(&quot;spread&quot;);
+            jq(&quot;.constituency-legend&quot;).nullState(&quot;legend&quot;);
+            jq(&quot;.constituency-meta&quot;).nullState(&quot;meta&quot;);
+            jq(&quot;.constituency-count-table&quot;).nullStateTable(data, function(){
+                jq(&quot;.const-results-table&quot;).table().data(&quot;table&quot;).refresh();
+            });
+        });
+
+    &lt;/script&gt;
+</code></pre></div></div></div></div><h1 id="sg-markup-Navigation" class="sg-h1 sg-title">Navigation</h1><div class="sg-section-group"><div class="sg-section"><h2 id="sg-markup-Navigation-election-header-html" class="sg-h2 sg-title">election header</h2><div class="sg-sub-section sg-example"><link href="qa.irishtimes.com/static/select2/select2.css" rel="stylesheet">
+
+
+<div class="row election-header election-header--2016 noGap col-split-s12">
+		<div class="span8 left" id="content_left_upper">
+	  
+                  
+    
+  
+    
+  
+    
+    
+        <a href="/election-2016/">&nbsp;</a>
+
+      
+  
+          </div>
+	<div class="span4 right" id="content_right_upper">
+	  
+                  
+    
+  
+    
+  
+    
+    
+            
+<link href="/static/select2/select2.css" rel="stylesheet">
+<script src="/static/select2/select2.js"></script>
+
+ <script type="text/javascript">
+    jq(document).ready(function() {
+        jq("select#alllinks_3443154").select2({
+            placeholder: "Inside Election 2016",
+            formatResult: format,
+            formatSelection: format,
+            escapeMarkup: function(m) { return m; }
+        });
+        jq(".link-selects").click(function () { 
+            var url = jq(this).select2("val");
+            window.location = url;
+        });
+    });
+    function format(link) {
+       return '<span class="icon"></span>' + '<span>' + link.text + '</span>';
+    }   
+ </script>
+
+
+<style type="text/css">
+    .link-select { width: 100%; font-size: 100%; font-family: Arial, sans-serif; margin: 0; vertical-align: baseline; }
+    .link-select-mobile { display: none; margin-bottom: 20px; }
+     @media only screen and (min-width: 320px) and (max-width: 767px) {
+        .link-select-mobile { display: block; margin-bottom: 20px; }
+     }
+    .select2-container { width: 100%; font-size: 100%; font-family: Arial, sans-serif; }
+    .select2-results .select2-result-label { font-family: Arial, sans-serif; font-size: 95%; }
+    .select2-results .select2-no-results, .select2-results .select2-searching, .select2-results .select2-selection-limit { font-family: Arial, sans-serif; font-size: 95%; }
+</style>
+
+    <div class="select2-container link-select" id="s2id_alllinks_3443154"><a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-1">Inside Election 2016</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen1" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-1" id="s2id_autogen1"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen1_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-1" id="s2id_autogen1_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-1">   </ul></div></div><select id="alllinks_3443154" class="link-select select2-offscreen" onchange="location = this.options[this.selectedIndex].value;" tabindex="-1" title="">
+        <option></option>
+                                    <optgroup label="Inside Election 2016">
+                                                                                    
+                                                                                                          <option value="/election-2016/coalition-builder">Coalition Builder</option>
+           
+                                                                                                          <option value="/election-2016/shape-of-the-dail">Shape of the Dáil</option>
+           
+                                                                                                          <option value="/election-2016/results-hub">Results 2016 </option>
+           
+                                                                                                          <option value="/election-2016/results-2011">2011 results</option>
+           
+                                                                                                          <option value="/election-2016/results-2007">2007 results</option>
+           
+                                                                                                          <option value="/election-2016/election-news">News</option>
+           
+                                                                                                          <option value="/election-2016/election-analysis">Analysis</option>
+           
+                                                                                                          <option value="/news/politics/poll">The Irish Times Poll</option>
+           
+                                                                                                          <option value="/election-2016/when-harry-met">When Harry Met</option>
+           
+                                                                                                          <option value="/news/politics/poll-of-polls">Poll of Polls</option>
+           
+                                                                                                          <option value="/election-2016/party-promises">Party Promises</option>
+           
+                                                                                                          <option value="/election-2016/the-parties">The Parties</option>
+           
+                                                                                                          <option value="/election-2016/meet-the-voters">Meet the Voters</option>
+           
+                                                                                                          <option value="/election-2016/political-reform">Political Reform</option>
+                                                                   </optgroup>
+                                                <optgroup label="Constituencies">
+                                                                                    
+                                                                                                          <option value="/election-2016/carlow-kilkenny">Carlow-Kilkenny</option>
+           
+                                                                                                          <option value="/election-2016/cavan-monaghan">Cavan-Monaghan</option>
+           
+                                                                                                          <option value="/election-2016/clare">Clare</option>
+           
+                                                                                                          <option value="/election-2016/cork-east">Cork East</option>
+           
+                                                                                                          <option value="/election-2016/cork-north-central">Cork North-Central</option>
+           
+                                                                                                          <option value="/election-2016/cork-north-west">Cork North-West</option>
+           
+                                                                                                          <option value="/election-2016/cork-south-central">Cork South-Central</option>
+           
+                                                                                                          <option value="/election-2016/cork-south-west">Cork South-West</option>
+           
+                                                                                                          <option value="/election-2016/donegal">Donegal</option>
+           
+                                                                                                          <option value="/election-2016/dublin-bay-north">Dublin Bay North</option>
+           
+                                                                                                          <option value="/election-2016/dublin-bay-south">Dublin Bay South</option>
+           
+                                                                                                          <option value="/election-2016/dublin-central">Dublin Central</option>
+           
+                                                                                                          <option value="/election-2016/dublin-fingal">Dublin Fingal</option>
+           
+                                                                                                          <option value="/election-2016/dublin-mid-west">Dublin Mid-West</option>
+           
+                                                                                                          <option value="/election-2016/dublin-north-west">Dublin North-West</option>
+           
+                                                                                                          <option value="/election-2016/dublin-rathdown">Dublin Rathdown</option>
+           
+                                                                                                          <option value="/election-2016/dublin-south-central">Dublin South-Central</option>
+           
+                                                                                                          <option value="/election-2016/dublin-south-west">Dublin South-West</option>
+           
+                                                                                                          <option value="/election-2016/dublin-west">Dublin West</option>
+           
+                                                                                                          <option value="/election-2016/dun-laoghaire">Dún Laoghaire </option>
+           
+                                                                                                          <option value="/election-2016/galway-east">Galway East</option>
+           
+                                                                                                          <option value="/election-2016/galway-west">Galway West</option>
+           
+                                                                                                          <option value="/election-2016/kerry">Kerry</option>
+           
+                                                                                                          <option value="/election-2016/kildare-north">Kildare North</option>
+           
+                                                                                                          <option value="/election-2016/kildare-south">Kildare South</option>
+           
+                                                                                                          <option value="/election-2016/laois">Laois</option>
+           
+                                                                                                          <option value="/election-2016/limerick-city">Limerick City</option>
+           
+                                                                                                          <option value="/election-2016/limerick-county">Limerick County</option>
+           
+                                                                                                          <option value="/election-2016/longford-westmeath">Longford-Westmeath</option>
+           
+                                                                                                          <option value="/election-2016/louth">Louth</option>
+           
+                                                                                                          <option value="/election-2016/mayo">Mayo</option>
+           
+                                                                                                          <option value="/election-2016/meath-east">Meath East</option>
+           
+                                                                                                          <option value="/election-2016/meath-west">Meath West</option>
+           
+                                                                                                          <option value="/election-2016/offaly">Offaly</option>
+           
+                                                                                                          <option value="/election-2016/roscommon-galway">Roscommon-Galway</option>
+           
+                                                                                                          <option value="/election-2016/sligo-leitrim">Sligo-Leitrim</option>
+           
+                                                                                                          <option value="/election-2016/tipperary">Tipperary</option>
+           
+                                                                                                          <option value="/election-2016/waterford">Waterford</option>
+           
+                                                                                                          <option value="/election-2016/wexford">Wexford</option>
+           
+                                                                                                          <option value="/election-2016/wicklow">Wicklow</option>
+                                                                   </optgroup>
+                        </select>
+
+      
+  
+      	</div>
+</div>
+<div class="election-header election-header--2016__stripes election-header--2016">
+</div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;link href=&quot;qa.irishtimes.com/static/select2/select2.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+
+&lt;div class=&quot;row election-header election-header--2016 noGap col-split-s12&quot;&gt;
+		&lt;div class=&quot;span8 left&quot; id=&quot;content_left_upper&quot;&gt;
+	  
+                  
+    
+  
+    
+  
+    
+    
+        &lt;a href=&quot;/election-2016/&quot;&gt;&amp;nbsp;&lt;/a&gt;
+
+      
+  
+          &lt;/div&gt;
+	&lt;div class=&quot;span4 right&quot; id=&quot;content_right_upper&quot;&gt;
+	  
+                  
+    
+  
+    
+  
+    
+    
+            
+&lt;link href=&quot;/static/select2/select2.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;script src=&quot;/static/select2/select2.js&quot;&gt;&lt;/script&gt;
+
+ &lt;script type=&quot;text/javascript&quot;&gt;
+    jq(document).ready(function() {
+        jq(&quot;select#alllinks_3443154&quot;).select2({
+            placeholder: &quot;Inside Election 2016&quot;,
+            formatResult: format,
+            formatSelection: format,
+            escapeMarkup: function(m) { return m; }
+        });
+        jq(&quot;.link-selects&quot;).click(function () { 
+            var url = jq(this).select2(&quot;val&quot;);
+            window.location = url;
+        });
+    });
+    function format(link) {
+       return '&lt;span class=&quot;icon&quot;&gt;&lt;/span&gt;' + '&lt;span&gt;' + link.text + '&lt;/span&gt;';
+    }   
+ &lt;/script&gt;
+
+
+&lt;style type=&quot;text/css&quot;&gt;
+    .link-select { width: 100%; font-size: 100%; font-family: Arial, sans-serif; margin: 0; vertical-align: baseline; }
+    .link-select-mobile { display: none; margin-bottom: 20px; }
+     @media only screen and (min-width: 320px) and (max-width: 767px) {
+        .link-select-mobile { display: block; margin-bottom: 20px; }
+     }
+    .select2-container { width: 100%; font-size: 100%; font-family: Arial, sans-serif; }
+    .select2-results .select2-result-label { font-family: Arial, sans-serif; font-size: 95%; }
+    .select2-results .select2-no-results, .select2-results .select2-searching, .select2-results .select2-selection-limit { font-family: Arial, sans-serif; font-size: 95%; }
+&lt;/style&gt;
+
+    &lt;div class=&quot;select2-container link-select&quot; id=&quot;s2id_alllinks_3443154&quot;&gt;&lt;a href=&quot;javascript:void(0)&quot; class=&quot;select2-choice select2-default&quot; tabindex=&quot;-1&quot;&gt;   &lt;span class=&quot;select2-chosen&quot; id=&quot;select2-chosen-1&quot;&gt;Inside Election 2016&lt;/span&gt;&lt;abbr class=&quot;select2-search-choice-close&quot;&gt;&lt;/abbr&gt;   &lt;span class=&quot;select2-arrow&quot; role=&quot;presentation&quot;&gt;&lt;b role=&quot;presentation&quot;&gt;&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;&lt;label for=&quot;s2id_autogen1&quot; class=&quot;select2-offscreen&quot;&gt;&lt;/label&gt;&lt;input class=&quot;select2-focusser select2-offscreen&quot; type=&quot;text&quot; aria-haspopup=&quot;true&quot; role=&quot;button&quot; aria-labelledby=&quot;select2-chosen-1&quot; id=&quot;s2id_autogen1&quot;&gt;&lt;div class=&quot;select2-drop select2-display-none select2-with-searchbox&quot;&gt;   &lt;div class=&quot;select2-search&quot;&gt;       &lt;label for=&quot;s2id_autogen1_search&quot; class=&quot;select2-offscreen&quot;&gt;&lt;/label&gt;       &lt;input type=&quot;text&quot; autocomplete=&quot;off&quot; autocorrect=&quot;off&quot; autocapitalize=&quot;off&quot; spellcheck=&quot;false&quot; class=&quot;select2-input&quot; role=&quot;combobox&quot; aria-expanded=&quot;true&quot; aria-autocomplete=&quot;list&quot; aria-owns=&quot;select2-results-1&quot; id=&quot;s2id_autogen1_search&quot; placeholder=&quot;&quot;&gt;   &lt;/div&gt;   &lt;ul class=&quot;select2-results&quot; role=&quot;listbox&quot; id=&quot;select2-results-1&quot;&gt;   &lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;select id=&quot;alllinks_3443154&quot; class=&quot;link-select select2-offscreen&quot; onchange=&quot;location = this.options[this.selectedIndex].value;&quot; tabindex=&quot;-1&quot; title=&quot;&quot;&gt;
+        &lt;option&gt;&lt;/option&gt;
+                                    &lt;optgroup label=&quot;Inside Election 2016&quot;&gt;
+                                                                                    
+                                                                                                          &lt;option value=&quot;/election-2016/coalition-builder&quot;&gt;Coalition Builder&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/shape-of-the-dail&quot;&gt;Shape of the Dáil&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/results-hub&quot;&gt;Results 2016 &lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/results-2011&quot;&gt;2011 results&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/results-2007&quot;&gt;2007 results&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/election-news&quot;&gt;News&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/election-analysis&quot;&gt;Analysis&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/news/politics/poll&quot;&gt;The Irish Times Poll&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/when-harry-met&quot;&gt;When Harry Met&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/news/politics/poll-of-polls&quot;&gt;Poll of Polls&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/party-promises&quot;&gt;Party Promises&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/the-parties&quot;&gt;The Parties&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/meet-the-voters&quot;&gt;Meet the Voters&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/political-reform&quot;&gt;Political Reform&lt;/option&gt;
+                                                                   &lt;/optgroup&gt;
+                                                &lt;optgroup label=&quot;Constituencies&quot;&gt;
+                                                                                    
+                                                                                                          &lt;option value=&quot;/election-2016/carlow-kilkenny&quot;&gt;Carlow-Kilkenny&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/cavan-monaghan&quot;&gt;Cavan-Monaghan&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/clare&quot;&gt;Clare&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/cork-east&quot;&gt;Cork East&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/cork-north-central&quot;&gt;Cork North-Central&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/cork-north-west&quot;&gt;Cork North-West&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/cork-south-central&quot;&gt;Cork South-Central&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/cork-south-west&quot;&gt;Cork South-West&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/donegal&quot;&gt;Donegal&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/dublin-bay-north&quot;&gt;Dublin Bay North&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/dublin-bay-south&quot;&gt;Dublin Bay South&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/dublin-central&quot;&gt;Dublin Central&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/dublin-fingal&quot;&gt;Dublin Fingal&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/dublin-mid-west&quot;&gt;Dublin Mid-West&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/dublin-north-west&quot;&gt;Dublin North-West&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/dublin-rathdown&quot;&gt;Dublin Rathdown&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/dublin-south-central&quot;&gt;Dublin South-Central&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/dublin-south-west&quot;&gt;Dublin South-West&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/dublin-west&quot;&gt;Dublin West&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/dun-laoghaire&quot;&gt;Dún Laoghaire &lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/galway-east&quot;&gt;Galway East&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/galway-west&quot;&gt;Galway West&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/kerry&quot;&gt;Kerry&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/kildare-north&quot;&gt;Kildare North&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/kildare-south&quot;&gt;Kildare South&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/laois&quot;&gt;Laois&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/limerick-city&quot;&gt;Limerick City&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/limerick-county&quot;&gt;Limerick County&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/longford-westmeath&quot;&gt;Longford-Westmeath&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/louth&quot;&gt;Louth&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/mayo&quot;&gt;Mayo&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/meath-east&quot;&gt;Meath East&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/meath-west&quot;&gt;Meath West&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/offaly&quot;&gt;Offaly&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/roscommon-galway&quot;&gt;Roscommon-Galway&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/sligo-leitrim&quot;&gt;Sligo-Leitrim&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/tipperary&quot;&gt;Tipperary&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/waterford&quot;&gt;Waterford&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/wexford&quot;&gt;Wexford&lt;/option&gt;
+           
+                                                                                                          &lt;option value=&quot;/election-2016/wicklow&quot;&gt;Wicklow&lt;/option&gt;
+                                                                   &lt;/optgroup&gt;
+                        &lt;/select&gt;
+
+      
+  
+      	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;election-header election-header--2016__stripes election-header--2016&quot;&gt;
+&lt;/div&gt;</code></pre></div></div></div></div><h1 id="sg-markup-Tables" class="sg-h1 sg-title">Tables</h1><div class="sg-section-group"><div class="sg-section"><h2 id="sg-markup-Tables-constituencty-results-html" class="sg-h2 sg-title">constituencty results</h2><div class="sg-sub-section sg-example"><link rel="stylesheet" href="../plugins/css/tablesaw.css">
+
+
+
+
+<div class="constituency-count-table" role="grid" aria-labelledby="constituency results table" aria-readonly="true"><h3 class="ge-sub-heading">Count results</h3>
+<div class="tablesaw-bar mode-swipe"><div class="tablesaw-sortable-switch tablesaw-toolbar"><label>Sort:<span class="btn btn-small btn-select">% 1st Pref ↓<select><option value="0_asc">
+                    Candidate
+             (A-Z)</option><option value="0_desc">
+                    Candidate
+             (Z-A)</option><option value="1_asc">
+                    % 1st Pref
+             ↑</option><option selected="" value="1_desc">
+                    % 1st Pref
+             ↓</option></select></span></label></div><div class="tablesaw-advance"><a href="#" class="tablesaw-nav-btn btn btn-micro left disabled" title="Previous Column"></a><a href="#" class="tablesaw-nav-btn btn btn-micro right" title="Next Column"></a></div><div class="tablesaw-advance minimap"><ul class="tablesaw-advance-dots"><li><i></i></li><li><i></i></li><li><i></i></li><li><i></i></li><li><i></i></li><li><i></i></li><li><i></i></li><li><i></i></li><li class="tablesaw-advance-dots-hide"><i></i></li><li class="tablesaw-advance-dots-hide"><i></i></li></ul></div></div><table class="tablesaw tablesaw-swipe constituency-profile__table table const-results-table tablesaw-sortable" data-tablesaw-minimap="" data-tablesaw-mode="swipe" data-tablesaw-sortable="" data-tablesaw-sortable-switch="" role="presentation" id="table-7911">
+
+    <thead>
+        <tr role="row">
+            <th class="tablesaw-cell-persist tablesaw-sortable-head" data-tablesaw-priority="persist" data-tablesaw-sortable-col="" scope="col"><button class="tablesaw-sortable-btn">
+                    Candidate
+            </button></th>
+            <th role="columnheader" class="tablesaw-sortable-head  tablesaw-sortable-descending" data-tablesaw-sortable-col="" data-tablesaw-sortable-default-col="" scope="col"><button class="tablesaw-sortable-btn">
+                    % 1st Pref
+            </button></th>
+
+            
+                <th role="columnheader" scope="col">Count 1</th>
+            
+                <th role="columnheader" scope="col">Count 2</th>
+            
+                <th role="columnheader" scope="col">Count 3</th>
+            
+                <th role="columnheader" scope="col">Count 4</th>
+            
+                <th role="columnheader" scope="col">Count 5</th>
+            
+                <th role="columnheader" scope="col">Count 6</th>
+            
+                <th role="columnheader" scope="col" class="tablesaw-cell-hidden">Count 7</th>
+            
+                <th role="columnheader" scope="col" class="tablesaw-cell-hidden">Count 8</th>
+            
+        </tr>
+    </thead>
+
+    <tbody>
+        
+        
+            
+            <tr class="candidate-elected">
+                <td class="tablesaw-cell-persist fg">
+                    Murphy, Eoghan
+                    
+                        <i class="fa fa-check elected"><span class="visuallyhidden">elected</span></i>
+                    
+                </td>
+                
+                    <td>
+                        16.54%
+                    </td>
+                    
+                                    
+                                        <td>6,567</td>
+                                    
+                                    
+                                        <td>6,595</td>
+                                    
+                                    
+                                        <td>6,661</td>
+                                    
+                                    
+                                        <td>6,693</td>
+                                    
+                                    
+                                        <td>6,873</td>
+                                    
+                                    
+                                        <td>7,860</td>
+                                    
+                                    
+                                        <td class="tablesaw-cell-hidden"><strong>8,023</strong></td>
+                                    <td class="tablesaw-cell-hidden"></td>
+                
+            </tr>
+        
+            
+            <tr class="candidate-elected">
+                <td class="tablesaw-cell-persist fg">
+                    O'Connell, Kate
+                    
+                        <i class="fa fa-check elected"><span class="visuallyhidden">elected</span></i>
+                    
+                </td>
+                
+                    <td>
+                        13.60%
+                    </td>
+                    
+                                    
+                                        <td>5,399</td>
+                                    
+                                    
+                                        <td>5,416</td>
+                                    
+                                    
+                                        <td>5,483</td>
+                                    
+                                    
+                                        <td>5,527</td>
+                                    
+                                    
+                                        <td>5,773</td>
+                                    
+                                    
+                                        <td>6,324</td>
+                                    
+                                    
+                                        <td class="tablesaw-cell-hidden">6,446</td>
+                                    
+                                    
+                                        <td class="tablesaw-cell-hidden"><strong>6,547</strong></td>
+                                    
+                
+            </tr>
+        
+            
+            <tr class="candidate-elected">
+                <td class="tablesaw-cell-persist ff">
+                    O'Callaghan, Jim
+                    
+                        <i class="fa fa-check elected"><span class="visuallyhidden">elected</span></i>
+                    
+                </td>
+                
+                    <td>
+                        11.52%
+                    </td>
+                    
+                                    
+                                        <td>4,575</td>
+                                    
+                                    
+                                        <td>4,596</td>
+                                    
+                                    
+                                        <td>4,674</td>
+                                    
+                                    
+                                        <td>4,744</td>
+                                    
+                                    
+                                        <td>4,949</td>
+                                    
+                                    
+                                        <td>5,969</td>
+                                    
+                                    
+                                        <td class="tablesaw-cell-hidden">6,678</td>
+                                    
+                                    
+                                        <td class="tablesaw-cell-hidden"><strong>6,921</strong></td>
+                                    
+                
+            </tr>
+        
+            
+            <tr class="candidate-elected">
+                <td class="tablesaw-cell-persist gp">
+                    Ryan, Eamon
+                    
+                        <i class="fa fa-check elected"><span class="visuallyhidden">elected</span></i>
+                    
+                </td>
+                
+                    <td>
+                        11.41%
+                    </td>
+                    
+                                    
+                                        <td>4,529</td>
+                                    
+                                    
+                                        <td>4,631</td>
+                                    
+                                    
+                                        <td>4,929</td>
+                                    
+                                    
+                                        <td>5,277</td>
+                                    
+                                    
+                                        <td>6,605</td>
+                                    
+                                    
+                                        <td>7,560</td>
+                                    
+                                    
+                                        <td class="tablesaw-cell-hidden"><strong>8,788</strong></td>
+                                    <td class="tablesaw-cell-hidden"></td>
+                
+            </tr>
+        
+            
+            <tr class="candidate-eliminated">
+                <td class="tablesaw-cell-persist ri">
+                    Creighton, Lucinda
+                    
+                        <i class="fa fa-times eliminated"><span class="visuallyhidden">eliminated</span></i>
+                    
+                </td>
+                
+                    <td>
+                        10.65%
+                    </td>
+                    
+                                    
+                                        <td>4,229</td>
+                                    
+                                    
+                                        <td>4,252</td>
+                                    
+                                    
+                                        <td>4,385</td>
+                                    
+                                    
+                                        <td>4,545</td>
+                                    
+                                    
+                                        <td>4,820</td>
+                                    <td></td><td class="tablesaw-cell-hidden"></td><td class="tablesaw-cell-hidden"></td>
+                
+            </tr>
+        
+            
+            <tr class="candidate-notElected">
+                <td class="tablesaw-cell-persist lab">
+                    Humphreys, Kevin
+                    
+                        <i class="fa fa-minus not-elected "><span class="visuallyhidden">not-elected</span></i>
+                    
+                </td>
+                
+                    <td>
+                        10.59%
+                    </td>
+                    
+                                    
+                                        <td>4,205</td>
+                                    
+                                    
+                                        <td>4,227</td>
+                                    
+                                    
+                                        <td>4,378</td>
+                                    
+                                    
+                                        <td>4,480</td>
+                                    
+                                    
+                                        <td>4,992</td>
+                                    
+                                    
+                                        <td>5,391</td>
+                                    
+                                    
+                                        <td class="tablesaw-cell-hidden">5,973</td>
+                                    
+                                    
+                                        <td class="tablesaw-cell-hidden">6,221</td>
+                                    
+                
+            </tr>
+        
+            
+            <tr class="candidate-eliminated">
+                <td class="tablesaw-cell-persist sf">
+                    Andrews, Chris
+                    
+                        <i class="fa fa-times eliminated"><span class="visuallyhidden">eliminated</span></i>
+                    
+                </td>
+                
+                    <td>
+                        9.51%
+                    </td>
+                    
+                                    
+                                        <td>3,774</td>
+                                    
+                                    
+                                        <td>3,796</td>
+                                    
+                                    
+                                        <td>3,957</td>
+                                    
+                                    
+                                        <td>4,511</td>
+                                    
+                                    
+                                        <td>4,888</td>
+                                    
+                                    
+                                        <td>5,197</td>
+                                    <td class="tablesaw-cell-hidden"></td><td class="tablesaw-cell-hidden"></td>
+                
+            </tr>
+        
+            
+            <tr class="candidate-eliminated">
+                <td class="tablesaw-cell-persist sd">
+                    Lynch, Glenna
+                    
+                        <i class="fa fa-times eliminated"><span class="visuallyhidden">eliminated</span></i>
+                    
+                </td>
+                
+                    <td>
+                        6.68%
+                    </td>
+                    
+                                    
+                                        <td>2,652</td>
+                                    
+                                    
+                                        <td>2,694</td>
+                                    
+                                    
+                                        <td>2,949</td>
+                                    
+                                    
+                                        <td>3,527</td>
+                                    <td></td><td></td><td class="tablesaw-cell-hidden"></td><td class="tablesaw-cell-hidden"></td>
+                
+            </tr>
+        
+            
+            <tr class="candidate-eliminated">
+                <td class="tablesaw-cell-persist pbp">
+                    Mooney, Annette
+                    
+                        <i class="fa fa-times eliminated"><span class="visuallyhidden">eliminated</span></i>
+                    
+                </td>
+                
+                    <td>
+                        4.35%
+                    </td>
+                    
+                                    
+                                        <td>1,728</td>
+                                    
+                                    
+                                        <td>1,819</td>
+                                    
+                                    
+                                        <td>2,149</td>
+                                    <td></td><td></td><td></td><td class="tablesaw-cell-hidden"></td><td class="tablesaw-cell-hidden"></td>
+                
+            </tr>
+        
+            
+            <tr class="candidate-eliminated">
+                <td class="tablesaw-cell-persist io">
+                    Flynn, Mannix
+                    
+                        <i class="fa fa-times eliminated"><span class="visuallyhidden">eliminated</span></i>
+                    
+                </td>
+                
+                    <td>
+                        3.84%
+                    </td>
+                    
+                                    
+                                        <td>1,525</td>
+                                    
+                                    
+                                        <td>1,648</td>
+                                    <td></td><td></td><td></td><td></td><td class="tablesaw-cell-hidden"></td><td class="tablesaw-cell-hidden"></td>
+                
+            </tr>
+        
+            
+            <tr class="candidate-eliminated">
+                <td class="tablesaw-cell-persist io">
+                    MacStiofain, Alan
+                    
+                        <i class="fa fa-times eliminated"><span class="visuallyhidden">eliminated</span></i>
+                    
+                </td>
+                
+                    <td>
+                        0.59%
+                    </td>
+                    
+                                    
+                                        <td>235</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td class="tablesaw-cell-hidden"></td><td class="tablesaw-cell-hidden"></td>
+                
+            </tr>
+        
+            
+            <tr class="candidate-eliminated">
+                <td class="tablesaw-cell-persist io">
+                    Tierney, Eoin
+                    
+                        <i class="fa fa-times eliminated"><span class="visuallyhidden">eliminated</span></i>
+                    
+                </td>
+                
+                    <td>
+                        0.38%
+                    </td>
+                    
+                                    
+                                        <td>151</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td class="tablesaw-cell-hidden"></td><td class="tablesaw-cell-hidden"></td>
+                
+            </tr>
+        
+            
+            <tr class="candidate-eliminated">
+                <td class="tablesaw-cell-persist io">
+                    Gorman, William
+                    
+                        <i class="fa fa-times eliminated"><span class="visuallyhidden">eliminated</span></i>
+                    
+                </td>
+                
+                    <td>
+                        0.24%
+                    </td>
+                    
+                                    
+                                        <td>97</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td class="tablesaw-cell-hidden"></td><td class="tablesaw-cell-hidden"></td>
+                
+            </tr>
+        
+            
+            <tr class="candidate-eliminated">
+                <td class="tablesaw-cell-persist io">
+                    Keigher, John Dominic
+                    
+                        <i class="fa fa-times eliminated"><span class="visuallyhidden">eliminated</span></i>
+                    
+                </td>
+                
+                    <td>
+                        0.09%
+                    </td>
+                    
+                                    
+                                        <td>37</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td class="tablesaw-cell-hidden"></td><td class="tablesaw-cell-hidden"></td>
+                
+            </tr>
+        
+    </tbody>
+
+</table></div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;link rel=&quot;stylesheet&quot; href=&quot;../plugins/css/tablesaw.css&quot;&gt;
+
+
+
+
+&lt;div class=&quot;constituency-count-table&quot; role=&quot;grid&quot; aria-labelledby=&quot;constituency results table&quot; aria-readonly=&quot;true&quot;&gt;&lt;h3 class=&quot;ge-sub-heading&quot;&gt;Count results&lt;/h3&gt;
+&lt;div class=&quot;tablesaw-bar mode-swipe&quot;&gt;&lt;div class=&quot;tablesaw-sortable-switch tablesaw-toolbar&quot;&gt;&lt;label&gt;Sort:&lt;span class=&quot;btn btn-small btn-select&quot;&gt;% 1st Pref ↓&lt;select&gt;&lt;option value=&quot;0_asc&quot;&gt;
+                    Candidate
+             (A-Z)&lt;/option&gt;&lt;option value=&quot;0_desc&quot;&gt;
+                    Candidate
+             (Z-A)&lt;/option&gt;&lt;option value=&quot;1_asc&quot;&gt;
+                    % 1st Pref
+             ↑&lt;/option&gt;&lt;option selected=&quot;&quot; value=&quot;1_desc&quot;&gt;
+                    % 1st Pref
+             ↓&lt;/option&gt;&lt;/select&gt;&lt;/span&gt;&lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;tablesaw-advance&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;tablesaw-nav-btn btn btn-micro left disabled&quot; title=&quot;Previous Column&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#&quot; class=&quot;tablesaw-nav-btn btn btn-micro right&quot; title=&quot;Next Column&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;tablesaw-advance minimap&quot;&gt;&lt;ul class=&quot;tablesaw-advance-dots&quot;&gt;&lt;li&gt;&lt;i&gt;&lt;/i&gt;&lt;/li&gt;&lt;li&gt;&lt;i&gt;&lt;/i&gt;&lt;/li&gt;&lt;li&gt;&lt;i&gt;&lt;/i&gt;&lt;/li&gt;&lt;li&gt;&lt;i&gt;&lt;/i&gt;&lt;/li&gt;&lt;li&gt;&lt;i&gt;&lt;/i&gt;&lt;/li&gt;&lt;li&gt;&lt;i&gt;&lt;/i&gt;&lt;/li&gt;&lt;li&gt;&lt;i&gt;&lt;/i&gt;&lt;/li&gt;&lt;li&gt;&lt;i&gt;&lt;/i&gt;&lt;/li&gt;&lt;li class=&quot;tablesaw-advance-dots-hide&quot;&gt;&lt;i&gt;&lt;/i&gt;&lt;/li&gt;&lt;li class=&quot;tablesaw-advance-dots-hide&quot;&gt;&lt;i&gt;&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;table class=&quot;tablesaw tablesaw-swipe constituency-profile__table table const-results-table tablesaw-sortable&quot; data-tablesaw-minimap=&quot;&quot; data-tablesaw-mode=&quot;swipe&quot; data-tablesaw-sortable=&quot;&quot; data-tablesaw-sortable-switch=&quot;&quot; role=&quot;presentation&quot; id=&quot;table-7911&quot;&gt;
+
+    &lt;thead&gt;
+        &lt;tr role=&quot;row&quot;&gt;
+            &lt;th class=&quot;tablesaw-cell-persist tablesaw-sortable-head&quot; data-tablesaw-priority=&quot;persist&quot; data-tablesaw-sortable-col=&quot;&quot; scope=&quot;col&quot;&gt;&lt;button class=&quot;tablesaw-sortable-btn&quot;&gt;
+                    Candidate
+            &lt;/button&gt;&lt;/th&gt;
+            &lt;th role=&quot;columnheader&quot; class=&quot;tablesaw-sortable-head  tablesaw-sortable-descending&quot; data-tablesaw-sortable-col=&quot;&quot; data-tablesaw-sortable-default-col=&quot;&quot; scope=&quot;col&quot;&gt;&lt;button class=&quot;tablesaw-sortable-btn&quot;&gt;
+                    % 1st Pref
+            &lt;/button&gt;&lt;/th&gt;
+
+            
+                &lt;th role=&quot;columnheader&quot; scope=&quot;col&quot;&gt;Count 1&lt;/th&gt;
+            
+                &lt;th role=&quot;columnheader&quot; scope=&quot;col&quot;&gt;Count 2&lt;/th&gt;
+            
+                &lt;th role=&quot;columnheader&quot; scope=&quot;col&quot;&gt;Count 3&lt;/th&gt;
+            
+                &lt;th role=&quot;columnheader&quot; scope=&quot;col&quot;&gt;Count 4&lt;/th&gt;
+            
+                &lt;th role=&quot;columnheader&quot; scope=&quot;col&quot;&gt;Count 5&lt;/th&gt;
+            
+                &lt;th role=&quot;columnheader&quot; scope=&quot;col&quot;&gt;Count 6&lt;/th&gt;
+            
+                &lt;th role=&quot;columnheader&quot; scope=&quot;col&quot; class=&quot;tablesaw-cell-hidden&quot;&gt;Count 7&lt;/th&gt;
+            
+                &lt;th role=&quot;columnheader&quot; scope=&quot;col&quot; class=&quot;tablesaw-cell-hidden&quot;&gt;Count 8&lt;/th&gt;
+            
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+        
+        
+            
+            &lt;tr class=&quot;candidate-elected&quot;&gt;
+                &lt;td class=&quot;tablesaw-cell-persist fg&quot;&gt;
+                    Murphy, Eoghan
+                    
+                        &lt;i class=&quot;fa fa-check elected&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;elected&lt;/span&gt;&lt;/i&gt;
+                    
+                &lt;/td&gt;
+                
+                    &lt;td&gt;
+                        16.54%
+                    &lt;/td&gt;
+                    
+                                    
+                                        &lt;td&gt;6,567&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;6,595&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;6,661&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;6,693&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;6,873&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;7,860&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;strong&gt;8,023&lt;/strong&gt;&lt;/td&gt;
+                                    &lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;
+                
+            &lt;/tr&gt;
+        
+            
+            &lt;tr class=&quot;candidate-elected&quot;&gt;
+                &lt;td class=&quot;tablesaw-cell-persist fg&quot;&gt;
+                    O'Connell, Kate
+                    
+                        &lt;i class=&quot;fa fa-check elected&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;elected&lt;/span&gt;&lt;/i&gt;
+                    
+                &lt;/td&gt;
+                
+                    &lt;td&gt;
+                        13.60%
+                    &lt;/td&gt;
+                    
+                                    
+                                        &lt;td&gt;5,399&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;5,416&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;5,483&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;5,527&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;5,773&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;6,324&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;6,446&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;strong&gt;6,547&lt;/strong&gt;&lt;/td&gt;
+                                    
+                
+            &lt;/tr&gt;
+        
+            
+            &lt;tr class=&quot;candidate-elected&quot;&gt;
+                &lt;td class=&quot;tablesaw-cell-persist ff&quot;&gt;
+                    O'Callaghan, Jim
+                    
+                        &lt;i class=&quot;fa fa-check elected&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;elected&lt;/span&gt;&lt;/i&gt;
+                    
+                &lt;/td&gt;
+                
+                    &lt;td&gt;
+                        11.52%
+                    &lt;/td&gt;
+                    
+                                    
+                                        &lt;td&gt;4,575&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;4,596&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;4,674&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;4,744&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;4,949&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;5,969&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;6,678&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;strong&gt;6,921&lt;/strong&gt;&lt;/td&gt;
+                                    
+                
+            &lt;/tr&gt;
+        
+            
+            &lt;tr class=&quot;candidate-elected&quot;&gt;
+                &lt;td class=&quot;tablesaw-cell-persist gp&quot;&gt;
+                    Ryan, Eamon
+                    
+                        &lt;i class=&quot;fa fa-check elected&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;elected&lt;/span&gt;&lt;/i&gt;
+                    
+                &lt;/td&gt;
+                
+                    &lt;td&gt;
+                        11.41%
+                    &lt;/td&gt;
+                    
+                                    
+                                        &lt;td&gt;4,529&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;4,631&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;4,929&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;5,277&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;6,605&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;7,560&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;strong&gt;8,788&lt;/strong&gt;&lt;/td&gt;
+                                    &lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;
+                
+            &lt;/tr&gt;
+        
+            
+            &lt;tr class=&quot;candidate-eliminated&quot;&gt;
+                &lt;td class=&quot;tablesaw-cell-persist ri&quot;&gt;
+                    Creighton, Lucinda
+                    
+                        &lt;i class=&quot;fa fa-times eliminated&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;eliminated&lt;/span&gt;&lt;/i&gt;
+                    
+                &lt;/td&gt;
+                
+                    &lt;td&gt;
+                        10.65%
+                    &lt;/td&gt;
+                    
+                                    
+                                        &lt;td&gt;4,229&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;4,252&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;4,385&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;4,545&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;4,820&lt;/td&gt;
+                                    &lt;td&gt;&lt;/td&gt;&lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;&lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;
+                
+            &lt;/tr&gt;
+        
+            
+            &lt;tr class=&quot;candidate-notElected&quot;&gt;
+                &lt;td class=&quot;tablesaw-cell-persist lab&quot;&gt;
+                    Humphreys, Kevin
+                    
+                        &lt;i class=&quot;fa fa-minus not-elected &quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;not-elected&lt;/span&gt;&lt;/i&gt;
+                    
+                &lt;/td&gt;
+                
+                    &lt;td&gt;
+                        10.59%
+                    &lt;/td&gt;
+                    
+                                    
+                                        &lt;td&gt;4,205&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;4,227&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;4,378&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;4,480&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;4,992&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;5,391&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;5,973&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;6,221&lt;/td&gt;
+                                    
+                
+            &lt;/tr&gt;
+        
+            
+            &lt;tr class=&quot;candidate-eliminated&quot;&gt;
+                &lt;td class=&quot;tablesaw-cell-persist sf&quot;&gt;
+                    Andrews, Chris
+                    
+                        &lt;i class=&quot;fa fa-times eliminated&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;eliminated&lt;/span&gt;&lt;/i&gt;
+                    
+                &lt;/td&gt;
+                
+                    &lt;td&gt;
+                        9.51%
+                    &lt;/td&gt;
+                    
+                                    
+                                        &lt;td&gt;3,774&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;3,796&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;3,957&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;4,511&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;4,888&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;5,197&lt;/td&gt;
+                                    &lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;&lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;
+                
+            &lt;/tr&gt;
+        
+            
+            &lt;tr class=&quot;candidate-eliminated&quot;&gt;
+                &lt;td class=&quot;tablesaw-cell-persist sd&quot;&gt;
+                    Lynch, Glenna
+                    
+                        &lt;i class=&quot;fa fa-times eliminated&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;eliminated&lt;/span&gt;&lt;/i&gt;
+                    
+                &lt;/td&gt;
+                
+                    &lt;td&gt;
+                        6.68%
+                    &lt;/td&gt;
+                    
+                                    
+                                        &lt;td&gt;2,652&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;2,694&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;2,949&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;3,527&lt;/td&gt;
+                                    &lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;&lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;
+                
+            &lt;/tr&gt;
+        
+            
+            &lt;tr class=&quot;candidate-eliminated&quot;&gt;
+                &lt;td class=&quot;tablesaw-cell-persist pbp&quot;&gt;
+                    Mooney, Annette
+                    
+                        &lt;i class=&quot;fa fa-times eliminated&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;eliminated&lt;/span&gt;&lt;/i&gt;
+                    
+                &lt;/td&gt;
+                
+                    &lt;td&gt;
+                        4.35%
+                    &lt;/td&gt;
+                    
+                                    
+                                        &lt;td&gt;1,728&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;1,819&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;2,149&lt;/td&gt;
+                                    &lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;&lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;
+                
+            &lt;/tr&gt;
+        
+            
+            &lt;tr class=&quot;candidate-eliminated&quot;&gt;
+                &lt;td class=&quot;tablesaw-cell-persist io&quot;&gt;
+                    Flynn, Mannix
+                    
+                        &lt;i class=&quot;fa fa-times eliminated&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;eliminated&lt;/span&gt;&lt;/i&gt;
+                    
+                &lt;/td&gt;
+                
+                    &lt;td&gt;
+                        3.84%
+                    &lt;/td&gt;
+                    
+                                    
+                                        &lt;td&gt;1,525&lt;/td&gt;
+                                    
+                                    
+                                        &lt;td&gt;1,648&lt;/td&gt;
+                                    &lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;&lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;
+                
+            &lt;/tr&gt;
+        
+            
+            &lt;tr class=&quot;candidate-eliminated&quot;&gt;
+                &lt;td class=&quot;tablesaw-cell-persist io&quot;&gt;
+                    MacStiofain, Alan
+                    
+                        &lt;i class=&quot;fa fa-times eliminated&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;eliminated&lt;/span&gt;&lt;/i&gt;
+                    
+                &lt;/td&gt;
+                
+                    &lt;td&gt;
+                        0.59%
+                    &lt;/td&gt;
+                    
+                                    
+                                        &lt;td&gt;235&lt;/td&gt;
+                                    &lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;&lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;
+                
+            &lt;/tr&gt;
+        
+            
+            &lt;tr class=&quot;candidate-eliminated&quot;&gt;
+                &lt;td class=&quot;tablesaw-cell-persist io&quot;&gt;
+                    Tierney, Eoin
+                    
+                        &lt;i class=&quot;fa fa-times eliminated&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;eliminated&lt;/span&gt;&lt;/i&gt;
+                    
+                &lt;/td&gt;
+                
+                    &lt;td&gt;
+                        0.38%
+                    &lt;/td&gt;
+                    
+                                    
+                                        &lt;td&gt;151&lt;/td&gt;
+                                    &lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;&lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;
+                
+            &lt;/tr&gt;
+        
+            
+            &lt;tr class=&quot;candidate-eliminated&quot;&gt;
+                &lt;td class=&quot;tablesaw-cell-persist io&quot;&gt;
+                    Gorman, William
+                    
+                        &lt;i class=&quot;fa fa-times eliminated&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;eliminated&lt;/span&gt;&lt;/i&gt;
+                    
+                &lt;/td&gt;
+                
+                    &lt;td&gt;
+                        0.24%
+                    &lt;/td&gt;
+                    
+                                    
+                                        &lt;td&gt;97&lt;/td&gt;
+                                    &lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;&lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;
+                
+            &lt;/tr&gt;
+        
+            
+            &lt;tr class=&quot;candidate-eliminated&quot;&gt;
+                &lt;td class=&quot;tablesaw-cell-persist io&quot;&gt;
+                    Keigher, John Dominic
+                    
+                        &lt;i class=&quot;fa fa-times eliminated&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;eliminated&lt;/span&gt;&lt;/i&gt;
+                    
+                &lt;/td&gt;
+                
+                    &lt;td&gt;
+                        0.09%
+                    &lt;/td&gt;
+                    
+                                    
+                                        &lt;td&gt;37&lt;/td&gt;
+                                    &lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;&lt;td class=&quot;tablesaw-cell-hidden&quot;&gt;&lt;/td&gt;
+                
+            &lt;/tr&gt;
+        
+    &lt;/tbody&gt;
+
+&lt;/table&gt;&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-Tables-meta-data-html" class="sg-h2 sg-title">meta data</h2><div class="sg-sub-section sg-example"><div class="constituency-meta"><table class="table constituency-profile__table table">
+    <tbody>
+        
+
+        <tr class="border-right">
+            <td>Seats</td>
+            <td class="text-right">
+                <div class="national-view-card national-view-card__seats">
+                    
+                                <div class="party-FF">&nbsp;
+                                    <span class="visuallyhidden">ff</span>
+                                </div>
+                            
+                                <div class="party-SP">&nbsp;
+                                    <span class="visuallyhidden">sp</span>
+                                </div>
+                            
+                                <div class="party-SF">&nbsp;
+                                    <span class="visuallyhidden">sf</span>
+                                </div>
+                            
+                                <div class="party-FG">&nbsp;
+                                    <span class="visuallyhidden">fg</span>
+                                </div>
+                            
+                </div>
+            </td>
+        </tr>
+
+        <tr class="border-right">
+            <td>Electorate</td>
+            <td class="text-right">
+                81,609
+            </td>            
+        </tr>
+
+        <tr class="border-right">
+            <td>Quota</td>
+            <td class="text-right">
+                10,235
+            </td>            
+        </tr>
+
+        <tr class="border-right">
+            <td>Total Poll</td>
+            <td class="text-right">
+                51,690
+            </td>            
+        </tr>
+
+        <tr class="border-right">
+            <td>Spoiled</td>
+            <td class="text-right">
+                516
+            </td>
+        </tr>
+
+        <tr class="border-right">
+            <td>Valid Poll</td>
+            <td class="text-right">
+                51,174
+            </td>
+        </tr>
+
+        <tr class="border-right">
+            <td>Turnout</td>
+            <td class="text-right">
+                63.34%
+            </td>
+        </tr>
+
+    </tbody>
+</table></div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;constituency-meta&quot;&gt;&lt;table class=&quot;table constituency-profile__table table&quot;&gt;
+    &lt;tbody&gt;
+        
+
+        &lt;tr class=&quot;border-right&quot;&gt;
+            &lt;td&gt;Seats&lt;/td&gt;
+            &lt;td class=&quot;text-right&quot;&gt;
+                &lt;div class=&quot;national-view-card national-view-card__seats&quot;&gt;
+                    
+                                &lt;div class=&quot;party-FF&quot;&gt;&amp;nbsp;
+                                    &lt;span class=&quot;visuallyhidden&quot;&gt;ff&lt;/span&gt;
+                                &lt;/div&gt;
+                            
+                                &lt;div class=&quot;party-SP&quot;&gt;&amp;nbsp;
+                                    &lt;span class=&quot;visuallyhidden&quot;&gt;sp&lt;/span&gt;
+                                &lt;/div&gt;
+                            
+                                &lt;div class=&quot;party-SF&quot;&gt;&amp;nbsp;
+                                    &lt;span class=&quot;visuallyhidden&quot;&gt;sf&lt;/span&gt;
+                                &lt;/div&gt;
+                            
+                                &lt;div class=&quot;party-FG&quot;&gt;&amp;nbsp;
+                                    &lt;span class=&quot;visuallyhidden&quot;&gt;fg&lt;/span&gt;
+                                &lt;/div&gt;
+                            
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr class=&quot;border-right&quot;&gt;
+            &lt;td&gt;Electorate&lt;/td&gt;
+            &lt;td class=&quot;text-right&quot;&gt;
+                81,609
+            &lt;/td&gt;            
+        &lt;/tr&gt;
+
+        &lt;tr class=&quot;border-right&quot;&gt;
+            &lt;td&gt;Quota&lt;/td&gt;
+            &lt;td class=&quot;text-right&quot;&gt;
+                10,235
+            &lt;/td&gt;            
+        &lt;/tr&gt;
+
+        &lt;tr class=&quot;border-right&quot;&gt;
+            &lt;td&gt;Total Poll&lt;/td&gt;
+            &lt;td class=&quot;text-right&quot;&gt;
+                51,690
+            &lt;/td&gt;            
+        &lt;/tr&gt;
+
+        &lt;tr class=&quot;border-right&quot;&gt;
+            &lt;td&gt;Spoiled&lt;/td&gt;
+            &lt;td class=&quot;text-right&quot;&gt;
+                516
+            &lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr class=&quot;border-right&quot;&gt;
+            &lt;td&gt;Valid Poll&lt;/td&gt;
+            &lt;td class=&quot;text-right&quot;&gt;
+                51,174
+            &lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr class=&quot;border-right&quot;&gt;
+            &lt;td&gt;Turnout&lt;/td&gt;
+            &lt;td class=&quot;text-right&quot;&gt;
+                63.34%
+            &lt;/td&gt;
+        &lt;/tr&gt;
+
+    &lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;</code></pre></div></div></div></div></div>      </div><!--/.sg-container-->
+    </div><!--/.sg-main-->
+  </div><!--/.sg-wrapper-->
+
+  <!--[if gt IE 8]><!--><script src="vendor/prism/prism.js"></script><!--<![endif]-->
+  <script src="js/sg-scripts.js"></script>
+</body>
+</html>
+
